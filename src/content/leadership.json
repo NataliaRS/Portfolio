@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "eyebrow": "LEADERSHIP",
+    "title": "How I Lead",
+    "body": "I lead by building systems that multiply the team's judgment — not centralize it in me."
+  },
+  "principles": [
+    {
+      "eyebrow": "01 — SYSTEMS, NOT CENTRALIZATION",
+      "body": "At Elastic, I directed a multidisciplinary team — senior design, UX engineering, research, and a Test & Learn program — where the work didn't depend on me reviewing every piece. It depended on the infrastructure itself — the design system, the playbook, the documentation frameworks — doing the work of ensuring consistency."
+    },
+    {
+      "eyebrow": "02 — GOVERNANCE, NOT ARBITRATION",
+      "body": "When the Alpha Design System created tension between UX and Engineering over ownership, I didn't resolve it with hierarchical authority — I resolved it with an explicit cross-functional governance model that defined ownership by layer. The strongest validation didn't come from my own team: it came from Brand's lead independently arriving at the same model I'd been advocating for."
+    },
+    {
+      "eyebrow": "03 — PLAYER-COACH, NOT JUST COORDINATOR",
+      "body": "I keep designing and building while I lead. VIU — a design system I built alone in six weeks, with Figma-to-code parity mechanically verified via scripts — is proof that technical judgment doesn't atrophy when you lead; it translates into better standards for the team."
+    },
+    {
+      "eyebrow": "04 — SCALE CAPACITY, NOT JUST DELIVER WORK",
+      "body": "I defined and led a portfolio of seven AI-powered design initiatives with a projected impact of 2,600–4,500 hours a year of capacity returned to the team. I authored Elastic's UX Playbook — the infrastructure that standardizes UX practice at the organizational level, so the standard doesn't live in my memory; it lives in a document the team consults without needing my approval on every decision."
+    },
+    {
+      "eyebrow": "05 — DEVELOP PEOPLE, NOT JUST ASSIGN TASKS",
+      "body": "My team at Elastic was deliberately heterogeneous — A/B testing, UX engineering, design — each discipline with different goals. For each person, I ran an individual analysis: we reviewed the real expectations of their role and level together, identified the gap between where they were and where they wanted to go, and mapped a concrete path to close it — sustained with weekly 1:1 coaching and group sessions to integrate the team as a unit. The result wasn't just clarity of direction — it was real participation: each person brought their own ideas instead of just executing."
+    }
+  ],
+  "closing": {
+    "title": "How the team scaled with this model.",
+    "body": "That leadership model scaled with the team. Over my tenure, it grew from a design-only team into one spanning optimization (A/B testing), UX engineering, and full ownership of the UX team's design system and Storybook — with influence across the company's entire digital footprint. Under that model, people didn't just grow professionally: they contributed more to business goals, because they had real clarity on the specific value their skills brought to the company.",
+    "proof": {
+      "eyebrow": "THE CLEAREST PROOF — 2026",
+      "body": "When the company mandated strong AI adoption across every team, UX generated the strongest innovations and process improvements in the entire organization — not from one initiative of mine, but because every person on the team made their own contribution. A team with clarity of direction and the confidence to contribute doesn't just execute a top-down mandate — it turns it into the best possible version of itself."
+    }
+  }
+}

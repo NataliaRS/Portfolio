@@ -1,10 +1,12 @@
 import aboutJson from "./about.json";
 import casesJson from "./cases.json";
 import homeJson from "./home.json";
+import leadershipJson from "./leadership.json";
 import siteJson from "./site.json";
 import esAbout from "./es/about.json";
 import esCases from "./es/cases.json";
 import esHome from "./es/home.json";
+import esLeadership from "./es/leadership.json";
 import esSite from "./es/site.json";
 
 /**
@@ -121,7 +123,6 @@ export interface Site {
 }
 
 export interface CaseStudy {
-  nav: { num: string; label: string }[];
   hero: {
     eyebrow: string;
     title: string;
@@ -146,8 +147,19 @@ export interface CaseStudy {
   next: { num: string; label: string; title: string; body: string };
 }
 
+export interface Leadership {
+  hero: { eyebrow: string; title: string; body: string };
+  principles: { eyebrow: string; body: string }[];
+  closing: {
+    title: string;
+    body: string;
+    proof: { eyebrow: string; body: string };
+  };
+}
+
 export interface Content {
   about: About;
+  leadership: Leadership;
   home: Home;
   site: Site;
   cases: { list: CaseSummary[]; study: CaseStudy };
@@ -156,6 +168,7 @@ export interface Content {
 /** English source of truth — generated from the Figma text nodes. */
 export const EN: Content = {
   about: aboutJson as About,
+  leadership: leadershipJson as Leadership,
   home: homeJson as Home,
   site: siteJson as Site,
   cases: casesJson as { list: CaseSummary[]; study: CaseStudy },
@@ -167,6 +180,7 @@ export const EN: Content = {
  */
 export const ES_OVERLAY = {
   about: esAbout,
+  leadership: esLeadership,
   home: esHome,
   site: esSite,
   cases: esCases,

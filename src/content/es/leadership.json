@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "eyebrow": "LIDERAZGO",
+    "title": "Cómo lidero",
+    "body": "Lidero construyendo sistemas que multiplican el criterio del equipo — no que lo centralizan en mí."
+  },
+  "principles": [
+    {
+      "eyebrow": "01 — SISTEMAS, NO CENTRALIZACIÓN",
+      "body": "En Elastic dirigí un equipo multidisciplinario — diseño senior, UX engineering, research y un programa de Test & Learn — donde el trabajo no dependía de que yo revisara cada pieza. Dependía de la infraestructura misma — el design system, el playbook, los marcos de documentación — haciendo el trabajo de garantizar la consistencia."
+    },
+    {
+      "eyebrow": "02 — GOBERNANZA, NO ARBITRAJE",
+      "body": "Cuando el Alpha Design System generó tensión entre UX e Ingeniería por la propiedad del sistema, no lo resolví con autoridad jerárquica — lo resolví con un modelo de gobernanza cross-funcional explícito que definía la propiedad por capa. La validación más fuerte no vino de mi propio equipo: vino de que el líder de Brand llegara por su cuenta al mismo modelo que yo venía defendiendo."
+    },
+    {
+      "eyebrow": "03 — PLAYER-COACH, NO SOLO COORDINADORA",
+      "body": "Sigo diseñando y construyendo mientras lidero. VIU — un design system que construí sola en seis semanas, con paridad Figma-código verificada mecánicamente por scripts — es la prueba de que el criterio técnico no se atrofia cuando liderás; se traduce en mejores estándares para el equipo."
+    },
+    {
+      "eyebrow": "04 — ESCALAR CAPACIDAD, NO SOLO ENTREGAR TRABAJO",
+      "body": "Definí y lideré un portafolio de siete iniciativas de diseño potenciadas por IA con un impacto proyectado de 2.600–4.500 horas al año de capacidad devuelta al equipo. Escribí el UX Playbook de Elastic — la infraestructura que estandariza la práctica de UX a nivel organizacional, para que el estándar no viva en mi memoria; vive en un documento que el equipo consulta sin necesitar mi aprobación en cada decisión."
+    },
+    {
+      "eyebrow": "05 — DESARROLLAR PERSONAS, NO SOLO ASIGNAR TAREAS",
+      "body": "Mi equipo en Elastic era deliberadamente heterogéneo — testing A/B, UX engineering, diseño — cada disciplina con objetivos distintos. Con cada persona hice un análisis individual: revisamos juntas las expectativas reales de su rol y su nivel, identificamos la brecha entre dónde estaban y a dónde querían llegar, y mapeamos un camino concreto para cerrarla — sostenido con coaching semanal 1:1 y sesiones grupales para integrar al equipo como unidad. El resultado no fue solo claridad de dirección — fue participación real: cada persona traía sus propias ideas en vez de solo ejecutar."
+    }
+  ],
+  "closing": {
+    "title": "Cómo escaló el equipo con este modelo.",
+    "body": "Ese modelo de liderazgo escaló con el equipo. A lo largo de mi gestión pasó de ser un equipo solo de diseño a uno que abarca optimización (testing A/B), UX engineering y la propiedad completa del design system y el Storybook del equipo de UX — con influencia en toda la huella digital de la compañía. Bajo ese modelo, las personas no solo crecieron profesionalmente: aportaron más a los objetivos de negocio, porque tenían claridad real sobre el valor específico que sus habilidades le traían a la compañía.",
+    "proof": {
+      "eyebrow": "LA PRUEBA MÁS CLARA — 2026",
+      "body": "Cuando la compañía exigió una adopción fuerte de IA en todos los equipos, UX generó las innovaciones y mejoras de proceso más fuertes de toda la organización — no a partir de una iniciativa mía, sino porque cada persona del equipo hizo su propio aporte. Un equipo con claridad de dirección y la confianza para aportar no solo ejecuta un mandato de arriba hacia abajo — lo convierte en la mejor versión posible de sí mismo."
+    }
+  }
+}

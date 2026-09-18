@@ -33,7 +33,7 @@ export function WorkPage() {
                 <Button variant="primary" onClick={() => navigate("/case/viu")}>
                   {hero.primaryCta}
                 </Button>
-                <Button variant="secondary" onClick={() => navigate("/about")}>
+                <Button variant="secondary" onClick={() => navigate("/leadership")}>
                   {hero.secondaryCta}
                 </Button>
               </div>

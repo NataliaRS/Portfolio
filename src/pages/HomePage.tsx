@@ -25,7 +25,7 @@ export function HomePage() {
                 <Button variant="primary" onClick={() => navigate("/work")}>
                   {hero.primaryCta}
                 </Button>
-                <Button variant="secondary" onClick={() => navigate("/about")}>
+                <Button variant="secondary" onClick={() => navigate("/leadership")}>
                   {hero.secondaryCta}
                 </Button>
               </div>

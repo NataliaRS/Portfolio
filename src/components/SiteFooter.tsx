@@ -9,7 +9,7 @@ import { Container } from "./primitives";
  * they cannot be the lookup key.
  */
 const ROUTES = [
-  ["/", "/work", "/about", "/about", "/work"],
+  ["/", "/work", "/about", "/leadership"],
   ["email", "whatsapp", "linkedin"],
 ];
 

@@ -132,6 +132,67 @@ ul {
   background: var(--color-bg-brand);
 }
 
+/* ----------------------------------------------------------- leadership -- */
+
+.lead-hero {
+  padding-block: var(--page-section-y);
+}
+
+.lead-hero__title {
+  margin-block: var(--space-lg) var(--space-lg);
+  color: var(--color-text-primary);
+}
+
+.lead-hero__body {
+  max-width: 820px;
+  color: var(--color-text-secondary);
+}
+
+.principles {
+  display: grid;
+  gap: var(--space-2xl);
+}
+
+.principle__body {
+  margin-top: var(--space-md);
+  color: var(--color-text-secondary);
+}
+
+.closing__body {
+  margin-block: var(--space-lg) var(--space-2xl);
+  color: var(--color-text-secondary);
+}
+
+/*
+ * The proof box: elevated surface with a crimson edge. Figma draws that edge
+ * at 4px, which is not a border-width token (the scale stops at 2px), so it
+ * is an accepted literal — same treatment the design system gives the Kbd
+ * keycap shadow.
+ */
+.proof-box {
+  border-left: 4px solid var(--color-bg-brand);
+  border-radius: var(--radius-surface);
+  background: var(--color-bg-elevated);
+  padding: var(--space-40);
+}
+
+.proof-box__eyebrow {
+  /*
+   * Figma sets this eyebrow in the raw brand crimson (#b5262e), which is
+   * 2.12:1 on bg/elevated and fails WCAG AA. `text/brand` is the semantic
+   * role for brand-coloured text and measures 4.73:1 on the same surface.
+   */
+  color: var(--color-text-brand);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  font-family: var(--font-family-label);
+}
+
+.proof-box__body {
+  margin-top: var(--space-md);
+  color: var(--color-text-primary);
+}
+
 /* ------------------------------------------------------- language menu -- */
 
 /*
