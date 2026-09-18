@@ -107,8 +107,12 @@ export function AboutPage() {
         <div className="subsection">
           <h3 className="subsection__title viu-type-title-s">Certifications &amp; continuous learning</h3>
           <div className="lines">
-            {about.certifications.map((line) => (
-              <p key={line}>{line}</p>
+            {about.certifications.map((entry) => (
+              <p key={entry.category}>
+                <span className="cert__category viu-type-body-l">{entry.category}</span>
+                {" — "}
+                {entry.body}
+              </p>
             ))}
           </div>
         </div>

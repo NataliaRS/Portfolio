@@ -1035,6 +1035,13 @@ ul {
   font-size: var(--font-size-body-m);
 }
 
+/* The category that opens each certification paragraph reads as the label of
+   the list it heads, so it takes the primary text colour and one step up the
+   body scale. The `viu-type-body-l` class carries the size. */
+.cert__category {
+  color: var(--color-text-primary);
+}
+
 .skills-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

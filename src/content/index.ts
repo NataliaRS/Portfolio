@@ -58,7 +58,8 @@ export interface About {
   skills: SkillGroup[];
   education: string[];
   languages: string[];
-  certifications: string[];
+  /** The leading category is its own field, not a string to split at render. */
+  certifications: { category: string; body: string }[];
 }
 
 export interface Home {

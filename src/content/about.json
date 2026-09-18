@@ -529,15 +529,45 @@
     "Spanish (native), English (professional)."
   ],
   "certifications": [
-    "AI & UX Design — AI for Designers, IxDF (2024); Foundations of User Experience Design, Google (2024); Journey Mapping, IxDF (2024); Human-Centered Design, UPEACE (2018).",
-    "Leadership, Strategy & Communication — Executive Women Leadership Development Program, INCAE (2022); Accelerated Project Management, GE360 (2021); Innovation Strategy Boot Camp, Cocolab / Universidad Latina de Costa Rica (2018); Strategy Planning Boot Camp, Universidad Latina de Costa Rica (2018); Influence, Storytelling and Presenting, UPEACE (2018); Shane Snow on Storytelling, LinkedIn Learning (2024); Duarte RESONATE Workshop (2018); Coaching for Business Performance, VMware Education (2021); Communication Techniques, VMware Education (2018); Desarrollo de un Equipo Líder para el Cambio Organizacional, Taller de Integración; Work Life Balance and Emotional Intelligence Workshop, VMware; Planeamiento Estratégico: Decodificación de Marcas y el Consumidor, Taller Jotabequ; Seminario Empresarial, Iglesia Oasis de Esperanza; Finanzas para Todos, Taller Jotabequ.",
-    "Agile & Delivery — Curso Profesional de Scrum, Platzi (2023); Scrum Master Professional Certificate, Certiprof (2022); Kanban System Design, Egeria Consulting (2020); Team Kanban Practitioner, Egeria Consulting (2020).",
-    "Adobe Experience Cloud & MarTech — Customize Digital Assets in AEM; Advanced Analysis Workspace Certificate; Develop Websites and Components in AEM; Data Analysis with Analysis Workspace; Personalize Dynamic Content using Adobe Target Recommendations; Magento Commerce Cloud for Developers; Leverage Experience Cloud Audiences in Adobe Target; Magento 2 Front-End for Developers; Create Web Experiences Using AEM; Personalize and Automate with Adobe Target; Fundamentals of Adobe Target; Marketo Core Concepts I & II; Manage and Deliver Digital Assets Using AEM; Introduction to Managing your Magento Store — all Adobe (2022).",
-    "Web & Frontend Development — Curso Profesional de NODE.JS y JavaScript, Platzi/Mejorando.la (2014); Curso Profesional de PHP con Laravel, Platzi/Mejorando.la (2014); Curso Profesional de FrontEnd, Platzi/Mejorando.la (2014); Curso de Diseño Web Online, Platzi/Mejorando.la (2014); Curso de Diseño Gráfico de Interfaces y UX, Platzi/Mejorando.la (2014); Introducción a la Programación en Java, TEC; ¿Cómo Aprender a Programar?, TEC.",
-    "Marketing & Growth — Marketing y Estrategia Digital, Platzi/Mejorando.la (2014); Curso Profesional de Google Adwords, Platzi/Mejorando.la (2014); Activación de Marcas, Taller Jotabequ; Actualización en Medios para Creativos y Diseñadores, Taller Jotabequ; Actualización en Producción Audiovisual, Taller Jotabequ; SMLatam 2011, Taller de Social Media Costa Rica; Seminario Shopping & Shopper, Taller Jotabequ.",
-    "Creative Craft — Asesores Gráficos: Dibujo de Comics; Copywriting 1 & 2, Clandestina; Diseño Web, Clandestina; Curso de Vitral, Facultad de Bellas Artes UCR; Diseñadora Floral Profesional, Instituto Mexicano Técnico Floral.",
-    "Languages — Inglés Intensivo para Adultos, Centro Cultural Costarricense Norteamericano (2017).",
-    "Other — Animal Hunting, FID – Taller Insight.",
-    "Driver’s License — B1 (car), A2 (motorcycle) · Costa Rica."
+    {
+      "category": "AI & UX Design",
+      "body": "AI for Designers, IxDF (2024); Foundations of User Experience Design, Google (2024); Journey Mapping, IxDF (2024); Human-Centered Design, UPEACE (2018)."
+    },
+    {
+      "category": "Leadership, Strategy & Communication",
+      "body": "Executive Women Leadership Development Program, INCAE (2022); Accelerated Project Management, GE360 (2021); Innovation Strategy Boot Camp, Cocolab / Universidad Latina de Costa Rica (2018); Strategy Planning Boot Camp, Universidad Latina de Costa Rica (2018); Influence, Storytelling and Presenting, UPEACE (2018); Shane Snow on Storytelling, LinkedIn Learning (2024); Duarte RESONATE Workshop (2018); Coaching for Business Performance, VMware Education (2021); Communication Techniques, VMware Education (2018); Desarrollo de un Equipo Líder para el Cambio Organizacional, Taller de Integración; Work Life Balance and Emotional Intelligence Workshop, VMware; Planeamiento Estratégico: Decodificación de Marcas y el Consumidor, Taller Jotabequ; Seminario Empresarial, Iglesia Oasis de Esperanza; Finanzas para Todos, Taller Jotabequ."
+    },
+    {
+      "category": "Agile & Delivery",
+      "body": "Curso Profesional de Scrum, Platzi (2023); Scrum Master Professional Certificate, Certiprof (2022); Kanban System Design, Egeria Consulting (2020); Team Kanban Practitioner, Egeria Consulting (2020)."
+    },
+    {
+      "category": "Adobe Experience Cloud & MarTech",
+      "body": "Customize Digital Assets in AEM; Advanced Analysis Workspace Certificate; Develop Websites and Components in AEM; Data Analysis with Analysis Workspace; Personalize Dynamic Content using Adobe Target Recommendations; Magento Commerce Cloud for Developers; Leverage Experience Cloud Audiences in Adobe Target; Magento 2 Front-End for Developers; Create Web Experiences Using AEM; Personalize and Automate with Adobe Target; Fundamentals of Adobe Target; Marketo Core Concepts I & II; Manage and Deliver Digital Assets Using AEM; Introduction to Managing your Magento Store — all Adobe (2022)."
+    },
+    {
+      "category": "Web & Frontend Development",
+      "body": "Curso Profesional de NODE.JS y JavaScript, Platzi/Mejorando.la (2014); Curso Profesional de PHP con Laravel, Platzi/Mejorando.la (2014); Curso Profesional de FrontEnd, Platzi/Mejorando.la (2014); Curso de Diseño Web Online, Platzi/Mejorando.la (2014); Curso de Diseño Gráfico de Interfaces y UX, Platzi/Mejorando.la (2014); Introducción a la Programación en Java, TEC; ¿Cómo Aprender a Programar?, TEC."
+    },
+    {
+      "category": "Marketing & Growth",
+      "body": "Marketing y Estrategia Digital, Platzi/Mejorando.la (2014); Curso Profesional de Google Adwords, Platzi/Mejorando.la (2014); Activación de Marcas, Taller Jotabequ; Actualización en Medios para Creativos y Diseñadores, Taller Jotabequ; Actualización en Producción Audiovisual, Taller Jotabequ; SMLatam 2011, Taller de Social Media Costa Rica; Seminario Shopping & Shopper, Taller Jotabequ."
+    },
+    {
+      "category": "Creative Craft",
+      "body": "Asesores Gráficos: Dibujo de Comics; Copywriting 1 & 2, Clandestina; Diseño Web, Clandestina; Curso de Vitral, Facultad de Bellas Artes UCR; Diseñadora Floral Profesional, Instituto Mexicano Técnico Floral."
+    },
+    {
+      "category": "Languages",
+      "body": "Inglés Intensivo para Adultos, Centro Cultural Costarricense Norteamericano (2017)."
+    },
+    {
+      "category": "Other",
+      "body": "Animal Hunting, FID – Taller Insight."
+    },
+    {
+      "category": "Driver’s License",
+      "body": "B1 (car), A2 (motorcycle) · Costa Rica."
+    }
   ]
 }
