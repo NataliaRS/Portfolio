@@ -11,6 +11,12 @@
     "themeLabels": {
       "light": "Light",
       "dark": "Dark"
+    },
+    "iconLabels": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "language": "Language"
     }
   },
   "footer": {

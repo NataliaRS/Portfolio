@@ -99,6 +99,8 @@ export interface Site {
     links: string[];
     cta: string;
     themeLabels: { light: string; dark: string };
+    /** Names for the icon-only buttons — tooltip and accessible name. */
+    iconLabels: { email: string; whatsapp: string; linkedin: string; language: string };
   };
   footer: {
     name: string;

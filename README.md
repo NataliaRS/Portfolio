@@ -81,6 +81,10 @@ refine, and editing the JSON is all it takes.
   `data-theme` and remembers the choice.
 - `prefers-reduced-motion` is respected, the layout has no horizontal scroll at
   390px, and every icon-only control has an accessible name.
+- The icon-only header buttons are wrapped in the system `Tooltip`, so hovering
+  or tabbing to one names it (and shows the address or number behind it)
+  instead of leaving the glyph to be guessed. The labels live in
+  `site.json` under `nav.iconLabels` and translate with the rest.
 
 ### Vendored design system
 

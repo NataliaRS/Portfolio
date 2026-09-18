@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Icon, IconButton, Menu, MenuItem, Popover } from "@viu/ui";
+import { Icon, IconButton, Menu, MenuItem, Popover, Tooltip } from "@viu/ui";
 
-import { LOCALES, useLocale } from "../i18n";
+import { LOCALES, useContent, useLocale } from "../i18n";
 
 /**
  * Language switcher — the `emoji_language` icon in the Figma header
@@ -11,6 +11,7 @@ import { LOCALES, useLocale } from "../i18n";
  */
 export function LanguageMenu() {
   const { locale, setLocale } = useLocale();
+  const label = useContent().site.nav.iconLabels.language;
   const [open, setOpen] = useState(false);
   const current = LOCALES.find((l) => l.value === locale)!;
 
@@ -20,13 +21,15 @@ export function LanguageMenu() {
       open={open}
       onOpenChange={setOpen}
       trigger={
-        <IconButton
-          variant="secondary"
-          aria-label={`Language: ${current.label}`}
-          aria-haspopup="menu"
-          aria-expanded={open}
-          icon={<Icon glyph="emoji_language" />}
-        />
+        <Tooltip label={`${label} · ${current.label}`} side="bottom">
+          <IconButton
+            variant="secondary"
+            aria-label={`${label}: ${current.label}`}
+            aria-haspopup="menu"
+            aria-expanded={open}
+            icon={<Icon glyph="emoji_language" />}
+          />
+        </Tooltip>
       }
     >
       <Menu aria-label="Language">

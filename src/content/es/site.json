@@ -1,14 +1,44 @@
 {
   "nav": {
-    "links": ["Trabajo", "Liderazgo", "Sobre mí", "Fun"],
+    "links": [
+      "Trabajo",
+      "Liderazgo",
+      "Sobre mí",
+      "Fun"
+    ],
     "cta": "Currículum",
-    "themeLabels": { "light": "Claro", "dark": "Oscuro" }
+    "themeLabels": {
+      "light": "Claro",
+      "dark": "Oscuro"
+    },
+    "iconLabels": {
+      "email": "Correo",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "language": "Idioma"
+    }
   },
   "footer": {
     "blurb": "Líder de UX AI-native que construye sistemas operativos que multiplican la capacidad del equipo en experiencias web B2B globales. Basada en Costa Rica.",
     "columns": [
-      { "title": "Sitio", "items": ["Inicio", "Trabajo", "Sobre mí", "Liderazgo", "Fun"] },
-      { "title": "Contacto", "items": ["Email", "WhatsApp", "LinkedIn"] }
+      {
+        "title": "Sitio",
+        "items": [
+          "Inicio",
+          "Trabajo",
+          "Sobre mí",
+          "Liderazgo",
+          "Fun"
+        ]
+      },
+      {
+        "title": "Contacto",
+        "items": [
+          "Email",
+          "WhatsApp",
+          "LinkedIn"
+        ]
+      }
     ],
     "resume": {
       "eyebrow": "Currículum",

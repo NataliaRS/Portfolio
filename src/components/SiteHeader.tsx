@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
-import { Avatar, Button, Icon, IconButton, Switch } from "@viu/ui";
+import { Avatar, Button, Icon, IconButton, Switch, Tooltip } from "@viu/ui";
 
 import { useContent } from "../i18n";
 import { applyTheme, readStoredTheme, type Theme } from "../theme";
@@ -26,6 +26,7 @@ export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
   };
 
   const { contact } = site;
+  const icons = site.nav.iconLabels;
 
   return (
     <header className="site-header">
@@ -67,26 +68,36 @@ export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
             <Button variant="primary" size="sm" trailingIcon={<Icon glyph="star" />}>
               {site.nav.cta}
             </Button>
-            <IconButton
-              variant="secondary"
-              aria-label={`Email: ${contact.email}`}
-              icon={<Icon glyph="stacked_email" />}
-              onClick={() => {
-                window.location.href = `mailto:${contact.email}`;
-              }}
-            />
-            <IconButton
-              variant="secondary"
-              aria-label={`WhatsApp: ${contact.whatsapp}`}
-              icon={<Icon glyph="chat_bubble" />}
-              onClick={() => window.open(`https://wa.me/${contact.whatsappNumber}`, "_blank", "noopener")}
-            />
-            <IconButton
-              variant="secondary"
-              aria-label="LinkedIn"
-              icon={<Icon glyph="account_circle" />}
-              onClick={() => window.open(contact.linkedin, "_blank", "noopener")}
-            />
+            {/* Icon-only buttons name themselves on hover/focus, so nobody has
+                to guess what the glyph means. */}
+            <Tooltip label={`${icons.email} · ${contact.email}`} side="bottom">
+              <IconButton
+                variant="secondary"
+                aria-label={`${icons.email}: ${contact.email}`}
+                icon={<Icon glyph="stacked_email" />}
+                onClick={() => {
+                  window.location.href = `mailto:${contact.email}`;
+                }}
+              />
+            </Tooltip>
+            <Tooltip label={`${icons.whatsapp} · ${contact.whatsapp}`} side="bottom">
+              <IconButton
+                variant="secondary"
+                aria-label={`${icons.whatsapp}: ${contact.whatsapp}`}
+                icon={<Icon glyph="chat_bubble" />}
+                onClick={() =>
+                  window.open(`https://wa.me/${contact.whatsappNumber}`, "_blank", "noopener")
+                }
+              />
+            </Tooltip>
+            <Tooltip label={icons.linkedin} side="bottom">
+              <IconButton
+                variant="secondary"
+                aria-label={icons.linkedin}
+                icon={<Icon glyph="account_circle" />}
+                onClick={() => window.open(contact.linkedin, "_blank", "noopener")}
+              />
+            </Tooltip>
             <LanguageMenu />
           </div>
         </div>
