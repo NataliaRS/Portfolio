@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Button, IconButton, Icon, Link, Tag } from "@viu/ui";
 
-import { cases, home, type CaseStudy } from "../content";
+import type { CaseStudy } from "../content";
+import { useContent } from "../i18n";
 import { Container, Media, Section } from "../components/primitives";
 import { CaseRow, GeneralWork } from "../components/sections";
 
@@ -80,6 +81,7 @@ function Gallery({ block }: { block: CaseStudy["gallery"] }) {
 
 export function CaseStudyPage() {
   const navigate = useNavigate();
+  const { cases, home } = useContent();
   const { slug } = useParams();
   const study = cases.study;
   const others = cases.list.filter((item) => item.slug !== slug);

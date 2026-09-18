@@ -1,0 +1,102 @@
+{
+  "disclaimer": "Disponible para roles de Manager / Director de UX",
+  "hero": {
+    "eyebrow": "Líder de UX AI-native · Experiencias web B2B globales",
+    "title": "Sistemas operativos de diseño que multiplican la capacidad del equipo.",
+    "body": "18+ años liderando UX enterprise — desde un primer rol de líder creativa en e-commerce regional hasta construir el área de experiencia web en una compañía global de infraestructura. Diseño los sistemas, no solo las pantallas.",
+    "primaryCta": "Ver casos",
+    "secondaryCta": "Cómo lidero →",
+    "figureCaption": "VIU — design system, canvas de componentes en vivo"
+  },
+  "stats": [
+    {
+      "label": "Años de experiencia"
+    },
+    {
+      "label": "Plataformas globales lideradas"
+    },
+    {
+      "label": "Design Systems construidos"
+    },
+    {
+      "label": "Idiomas publicados"
+    },
+    {
+      "label": "Alcance mensual en el pico de plataforma"
+    }
+  ],
+  "logosTitle": "Experiencia en industrias SaaS y B2C",
+  "recommendations": {
+    "title": "Recomendaciones",
+    "lead": {
+      "role": "Sr. Director, Palo Alto Networks · manager de Natalia"
+    },
+    "cards": [
+      {
+        "role": "Director, Palo Alto Networks"
+      },
+      {
+        "role": "Digital Director · reportaba a Natalia, VMware"
+      },
+      {
+        "role": "Principal Solutions Architect · compañero de equipo"
+      }
+    ],
+    "link": "¿Querés ver más recomendaciones? LinkedIn"
+  },
+  "cases": {
+    "title": "Casos de estudio",
+    "link": "Ver todos los casos de estudio",
+    "items": [
+      {
+        "title": "Un design system con cero deuda de diseño.",
+        "cta": "Ver caso",
+        "points": [
+          {
+            "title": "Paridad Figma-código →",
+            "body": "Scripts que garantizan paridad de tokens y componentes — sin drift entre diseño y producción."
+          },
+          {
+            "title": "Releases con CI →",
+            "body": "Cada componente sale por CI con chequeos visuales y de accesibilidad."
+          },
+          {
+            "title": "Sola, de punta a punta →",
+            "body": "Marca, tokens, componentes, documentación y gobernanza — construidos por una sola persona."
+          }
+        ],
+        "eyebrow": "Caso 01 — VIU"
+      },
+      {
+        "title": "Gobernanza que dejó a un área web avanzar sin mí.",
+        "cta": "Ver caso",
+        "points": [
+          {
+            "title": "Gobernanza, no control →",
+            "body": "Los equipos publican sin esperar a que yo los desbloquee."
+          },
+          {
+            "title": "Autodocumentado →",
+            "body": "Las decisiones quedan registradas donde ocurre el trabajo."
+          },
+          {
+            "title": "Escalé el área web →",
+            "body": "elastic.co avanza más rápido y con menos dependencias."
+          }
+        ],
+        "eyebrow": "Caso 02 — Elastic"
+      }
+    ]
+  },
+  "generalWork": {
+    "title": "Otros trabajos",
+    "items": [
+      "Design ops",
+      "CRO / testing",
+      "Localización",
+      "Concierge con IA",
+      "Sistemas de marca"
+    ],
+    "link": "Ver más trabajo en Behance"
+  }
+}

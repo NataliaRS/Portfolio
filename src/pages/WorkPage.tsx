@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@viu/ui";
 
-import { cases, home } from "../content";
+import { useContent } from "../i18n";
 import { Container, Media, Section } from "../components/primitives";
 import { CaseRow, GeneralWork } from "../components/sections";
 
@@ -15,6 +15,7 @@ import { CaseRow, GeneralWork } from "../components/sections";
  */
 export function WorkPage() {
   const navigate = useNavigate();
+  const { cases, home } = useContent();
   const { hero } = home;
 
   return (

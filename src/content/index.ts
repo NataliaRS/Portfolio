@@ -2,6 +2,10 @@ import aboutJson from "./about.json";
 import casesJson from "./cases.json";
 import homeJson from "./home.json";
 import siteJson from "./site.json";
+import esAbout from "./es/about.json";
+import esCases from "./es/cases.json";
+import esHome from "./es/home.json";
+import esSite from "./es/site.json";
 
 /**
  * All copy is generated 1:1 from the Figma file
@@ -47,7 +51,7 @@ export interface CaseSummary {
 }
 
 export interface About {
-  hero: { eyebrow: string; title: string; body: string };
+  hero: { eyebrow: string; title: string; body: string; cta: string };
   stats: Stat[];
   logosTitle: string;
   roles: Role[];
@@ -81,6 +85,15 @@ export interface Home {
 }
 
 export interface Site {
+  /** Real contact details — not translated. */
+  contact: {
+    email: string;
+    whatsapp: string;
+    /** Digits only, for the wa.me link. */
+    whatsappNumber: string;
+    linkedin: string;
+    behance: string;
+  };
   nav: {
     name: string;
     links: string[];
@@ -123,7 +136,28 @@ export interface CaseStudy {
   next: { num: string; label: string; title: string; body: string };
 }
 
-export const about = aboutJson as About;
-export const home = homeJson as Home;
-export const site = siteJson as Site;
-export const cases = casesJson as { list: CaseSummary[]; study: CaseStudy };
+export interface Content {
+  about: About;
+  home: Home;
+  site: Site;
+  cases: { list: CaseSummary[]; study: CaseStudy };
+}
+
+/** English source of truth — generated from the Figma text nodes. */
+export const EN: Content = {
+  about: aboutJson as About,
+  home: homeJson as Home,
+  site: siteJson as Site,
+  cases: casesJson as { list: CaseSummary[]; study: CaseStudy },
+};
+
+/**
+ * Spanish overlay: only the keys that change. See `merge` in `src/i18n.tsx`
+ * for how it composes over the English source.
+ */
+export const ES_OVERLAY = {
+  about: esAbout,
+  home: esHome,
+  site: esSite,
+  cases: esCases,
+};

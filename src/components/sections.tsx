@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Avatar, Button, Link, Quote } from "@viu/ui";
 
 import type { CaseSummary, Home, Stat } from "../content";
+import { useContent } from "../i18n";
 import { AeropostLogo, ElasticLogo, PaloAltoLogo, VMwareLogo } from "../assets/logos";
 import { Container, Media, Section } from "./primitives";
 
@@ -39,6 +40,8 @@ export function LogoStrip({ title }: { title: string }) {
 }
 
 export function Recommendations({ data }: { data: Home["recommendations"] }) {
+  const { site } = useContent();
+  const linkedin = site.contact.linkedin;
   return (
     <Section id="recommendations">
       <h2 className="section-title viu-type-headline-m">{data.title}</h2>
@@ -69,7 +72,7 @@ export function Recommendations({ data }: { data: Home["recommendations"] }) {
         ))}
       </div>
 
-      <Link href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+      <Link href={linkedin} target="_blank" rel="noreferrer">
         {data.link}
       </Link>
     </Section>
@@ -117,6 +120,8 @@ export function CaseRow({ item }: { item: CaseSummary }) {
 }
 
 export function GeneralWork({ data }: { data: Home["generalWork"] }) {
+  const { site } = useContent();
+  const behance = site.contact.behance;
   return (
     <Section id="general-work">
       <h2 className="section-title viu-type-headline-m" style={{ marginBottom: "var(--space-lg)" }}>
@@ -124,12 +129,12 @@ export function GeneralWork({ data }: { data: Home["generalWork"] }) {
       </h2>
       <div className="work-grid">
         {data.items.map((label) => (
-          <a key={label} className="work-card" href="https://www.behance.net/" target="_blank" rel="noreferrer">
+          <a key={label} className="work-card" href={behance} target="_blank" rel="noreferrer">
             {label}
           </a>
         ))}
       </div>
-      <Link href="https://www.behance.net/" target="_blank" rel="noreferrer">
+      <Link href={behance} target="_blank" rel="noreferrer">
         {data.link}
       </Link>
     </Section>

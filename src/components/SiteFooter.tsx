@@ -1,32 +1,29 @@
 import { Link as RouterLink } from "react-router-dom";
 import { Button, Icon } from "@viu/ui";
 
-import { site } from "../content";
+import { useContent } from "../i18n";
 import { Container } from "./primitives";
 
-const HREFS: Record<string, string> = {
-  Home: "/",
-  Work: "/work",
-  About: "/about",
-  Leadership: "/about",
-  Fun: "/work",
-  Email: "mailto:hello@nataliars.com",
-  WhatsApp: "https://wa.me/",
-  LinkedIn: "https://www.linkedin.com/",
-};
-
-function FooterLink({ label }: { label: string }) {
-  const href = HREFS[label] ?? "#";
-  if (href.startsWith("/")) return <RouterLink to={href}>{label}</RouterLink>;
-  return (
-    <a href={href} target="_blank" rel="noreferrer">
-      {label}
-    </a>
-  );
-}
+/**
+ * Footer link targets, by column and position — the labels are translated, so
+ * they cannot be the lookup key.
+ */
+const ROUTES = [
+  ["/", "/work", "/about", "/about", "/work"],
+  ["email", "whatsapp", "linkedin"],
+];
 
 export function SiteFooter() {
-  const { footer } = site;
+  const { site } = useContent();
+  const { footer, contact } = site;
+
+  const externalHref = (key: string) =>
+    key === "email"
+      ? `mailto:${contact.email}`
+      : key === "whatsapp"
+        ? `https://wa.me/${contact.whatsappNumber}`
+        : contact.linkedin;
+
   return (
     <>
       <hr className="rule" />
@@ -38,13 +35,23 @@ export function SiteFooter() {
               <p className="site-footer__blurb">{footer.blurb}</p>
             </div>
 
-            {footer.columns.map((column) => (
+            {footer.columns.map((column, col) => (
               <nav key={column.title} aria-label={column.title}>
                 <h2 className="site-footer__col-title">{column.title}</h2>
                 <ul className="site-footer__list">
-                  {column.items.map((item) => (
+                  {column.items.map((item, i) => (
                     <li key={item}>
-                      <FooterLink label={item} />
+                      {col === 0 ? (
+                        <RouterLink to={ROUTES[0][i] ?? "/"}>{item}</RouterLink>
+                      ) : (
+                        <a
+                          href={externalHref(ROUTES[1][i])}
+                          target={ROUTES[1][i] === "email" ? undefined : "_blank"}
+                          rel="noreferrer"
+                        >
+                          {item}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>

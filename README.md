@@ -30,17 +30,42 @@ npm run preview
 
 ```
 src/
-  content/*.json   all copy, generated 1:1 from the Figma text nodes
-  content/index.ts typed accessors for that copy
-  components/      header, footer and the shared section blocks
-  pages/           one file per Figma frame
-  styles/app.css   layout only — colour/space/type come from tokens
-  assets/logos.tsx client wordmarks, exported from Figma as SVG
+  content/*.json    English copy, generated 1:1 from the Figma text nodes
+  content/es/*.json Spanish overlay — only the keys that change
+  content/index.ts  typed accessors for that copy
+  i18n.tsx          locale state, the EN↔ES merge, useContent()
+  components/       header, footer and the shared section blocks
+  pages/            one file per Figma frame
+  styles/app.css    layout only — colour/space/type come from tokens
+  assets/logos.tsx  client wordmarks, exported from Figma as SVG
 ```
 
 **Edit the copy in `src/content/*.json`, not in the components.** The JSON was
 generated from the Figma nodes so the two never drift; bold runs inside the
 About bullets are stored as `{ t, b }` text runs, exactly as Figma styles them.
+
+### Languages
+
+The `emoji_language` icon in the header opens a menu (system `Popover` +
+`Menu` + `MenuItem`) that switches the whole site between English and Spanish.
+The choice persists and sets `<html lang>`.
+
+English is the source; `src/content/es/*.json` is an **overlay that only carries
+what changes**, merged over English at runtime. Anything it omits — or sets to
+`null` — falls back to English, so a half-written translation still renders a
+complete page. Arrays merge by index when the lengths match, and replace the
+list outright when they don't.
+
+Three things stay in English on purpose:
+
+- **Testimonials**, because they are verbatim quotes from the people who wrote
+  them; translating them would put words in their mouths.
+- **Job titles** (`Senior Manager, UX & Design (Web UX) · Elastic`), which are
+  used in their original form on a Spanish CV too.
+- **Tool and course names**, which are proper nouns.
+
+The Spanish long-form copy is a faithful first draft — it is Natalia's voice to
+refine, and editing the JSON is all it takes.
 
 ### Design system rules this repo follows
 
@@ -68,6 +93,12 @@ anything under `vendor/` by hand — refresh it from a local checkout instead:
 node scripts/sync-viu.mjs ../Viu     # rebuilds and re-copies the build
 npm run build                        # verify
 ```
+
+### Contact details
+
+Email, WhatsApp and the social links live once in `site.json` under `contact`;
+the header icons and the footer column both read from there. LinkedIn and
+Behance are still placeholder URLs.
 
 ### Images
 

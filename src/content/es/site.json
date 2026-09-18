@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "links": ["Trabajo", "Liderazgo", "Sobre mí", "Fun"],
+    "cta": "Currículum",
+    "themeLabels": { "light": "Claro", "dark": "Oscuro" }
+  },
+  "footer": {
+    "blurb": "Líder de UX AI-native que construye sistemas operativos que multiplican la capacidad del equipo en experiencias web B2B globales. Basada en Costa Rica.",
+    "columns": [
+      { "title": "Sitio", "items": ["Inicio", "Trabajo", "Sobre mí", "Liderazgo", "Fun"] },
+      { "title": "Contacto", "items": ["Email", "WhatsApp", "LinkedIn"] }
+    ],
+    "resume": {
+      "eyebrow": "Currículum",
+      "cta": "Descargar currículum"
+    },
+    "copyright": "© 2026 Natalia Rodríguez Salas. Todos los derechos reservados.",
+    "legal": "Privacidad · Términos"
+  }
+}

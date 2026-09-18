@@ -1,10 +1,11 @@
 import { Button, Icon, Tag } from "@viu/ui";
 
-import { about, cases, home } from "../content";
+import { useContent } from "../i18n";
 import { Container, Media, RichText, Section } from "../components/primitives";
 import { CaseRow, GeneralWork, LogoStrip, Recommendations, Stats } from "../components/sections";
 
 export function AboutPage() {
+  const { about, cases, home } = useContent();
   return (
     <>
       <hr className="rule" />
@@ -22,7 +23,7 @@ export function AboutPage() {
               <h1 className="about-hero__title viu-type-display-s">{about.hero.title}</h1>
               <p className="about-hero__body viu-type-body-l">{about.hero.body}</p>
               <Button variant="primary" size="sm" trailingIcon={<Icon glyph="download" />}>
-                Resume
+                {about.hero.cta}
               </Button>
             </div>
           </div>

@@ -2,33 +2,22 @@ import { useState } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Avatar, Button, Icon, IconButton, Switch } from "@viu/ui";
 
-import { site } from "../content";
+import { useContent } from "../i18n";
 import { applyTheme, readStoredTheme, type Theme } from "../theme";
+import { LanguageMenu } from "./LanguageMenu";
 import { Container } from "./primitives";
 
-/** Figma's nav labels mapped to the routes that exist today. */
-const ROUTES: Record<string, string> = {
-  Work: "/work",
-  Leadership: "/about",
-  About: "/about",
-  Fun: "/work",
-};
-
-/** Quick-contact icons, 1:1 with the Figma header frame `Quick Contact Icons`. */
-const QUICK_CONTACT = [
-  { glyph: "stacked_email", label: "Email", href: "mailto:hello@nataliars.com" },
-  { glyph: "chat_bubble", label: "WhatsApp", href: "https://wa.me/" },
-  { glyph: "account_circle", label: "LinkedIn", href: "https://www.linkedin.com/" },
-  { glyph: "emoji_language", label: "Languages", href: "/about#languages" },
-];
+/** Figma's nav labels are positional; these are the routes behind them. */
+const ROUTES = ["/work", "/about", "/about", "/work"];
 
 /** Only the canonical label of a route gets the underline, not every alias. */
-const ACTIVE_LABEL: Record<string, string> = { "/work": "Work", "/about": "About" };
+const ACTIVE_INDEX: Record<string, number> = { "/work": 0, "/about": 2 };
 
 export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
+  const { site } = useContent();
   const [theme, setTheme] = useState<Theme>(readStoredTheme);
   const { pathname } = useLocation();
-  const active = ACTIVE_LABEL[pathname];
+  const activeIndex = ACTIVE_INDEX[pathname];
 
   const toggle = (checked: boolean) => {
     const next: Theme = checked ? "dark" : "light";
@@ -36,13 +25,19 @@ export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
     applyTheme(next);
   };
 
+  const { contact } = site;
+
   return (
     <header className="site-header">
       <div className="theme-bar">
         <Container>
           <div className="theme-bar__inner">
             <span>{site.nav.themeLabels.light}</span>
-            <Switch checked={theme === "dark"} onCheckedChange={toggle} aria-label="Dark theme" />
+            <Switch
+              checked={theme === "dark"}
+              onCheckedChange={toggle}
+              aria-label={site.nav.themeLabels.dark}
+            />
             <span>{site.nav.themeLabels.dark}</span>
           </div>
         </Container>
@@ -56,12 +51,12 @@ export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
           </RouterLink>
 
           <nav className="site-nav" aria-label="Main">
-            {site.nav.links.map((label) => (
+            {site.nav.links.map((label, i) => (
               <RouterLink
                 key={label}
-                to={ROUTES[label] ?? "/"}
+                to={ROUTES[i] ?? "/"}
                 className="site-nav__link"
-                aria-current={label === active ? "page" : undefined}
+                aria-current={i === activeIndex ? "page" : undefined}
               >
                 {label}
               </RouterLink>
@@ -72,15 +67,27 @@ export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
             <Button variant="primary" size="sm" trailingIcon={<Icon glyph="star" />}>
               {site.nav.cta}
             </Button>
-            {QUICK_CONTACT.map((item) => (
-              <IconButton
-                key={item.label}
-                variant="secondary"
-                aria-label={item.label}
-                icon={<Icon glyph={item.glyph} />}
-                onClick={() => window.open(item.href, "_blank", "noopener")}
-              />
-            ))}
+            <IconButton
+              variant="secondary"
+              aria-label={`Email: ${contact.email}`}
+              icon={<Icon glyph="stacked_email" />}
+              onClick={() => {
+                window.location.href = `mailto:${contact.email}`;
+              }}
+            />
+            <IconButton
+              variant="secondary"
+              aria-label={`WhatsApp: ${contact.whatsapp}`}
+              icon={<Icon glyph="chat_bubble" />}
+              onClick={() => window.open(`https://wa.me/${contact.whatsappNumber}`, "_blank", "noopener")}
+            />
+            <IconButton
+              variant="secondary"
+              aria-label="LinkedIn"
+              icon={<Icon glyph="account_circle" />}
+              onClick={() => window.open(contact.linkedin, "_blank", "noopener")}
+            />
+            <LanguageMenu />
           </div>
         </div>
       </Container>

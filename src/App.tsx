@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
-import { home } from "./content";
+import { useContent } from "./i18n";
 import { AboutPage } from "./pages/AboutPage";
 import { CaseStudyPage } from "./pages/CaseStudyPage";
 import { HomePage } from "./pages/HomePage";
@@ -18,6 +18,7 @@ function ScrollToTop() {
 }
 
 export function App() {
+  const { home } = useContent();
   return (
     <>
       <a className="skip-link" href="#main">

@@ -10,6 +10,7 @@ import "@viu/ui/styles";
 import "./styles/app.css";
 
 import { App } from "./App";
+import { LocaleProvider } from "./i18n";
 import { readStoredTheme, applyTheme } from "./theme";
 
 applyTheme(readStoredTheme());
@@ -17,7 +18,9 @@ applyTheme(readStoredTheme());
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <App />
+      <LocaleProvider>
+        <App />
+      </LocaleProvider>
     </BrowserRouter>
   </StrictMode>,
 );

@@ -39,9 +39,16 @@
     "resume": {
       "eyebrow": "Resume",
       "title": "Manager / Director / Head of UX",
-      "cta": "Download résumé"
+      "cta": "Download resume"
     },
     "copyright": "© 2026 Natalia Rodríguez Salas. All rights reserved.",
     "legal": "Privacy · Terms"
+  },
+  "contact": {
+    "email": "dicrearte@gmail.com",
+    "whatsapp": "+506 8719 4296",
+    "whatsappNumber": "50687194296",
+    "linkedin": "https://www.linkedin.com/",
+    "behance": "https://www.behance.net/"
   }
 }

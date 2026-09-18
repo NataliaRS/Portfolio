@@ -1,0 +1,483 @@
+{
+  "hero": {
+    "eyebrow": "Sobre mí",
+    "title": "Hola, soy Natalia Rodríguez S.",
+    "body": "18+ años liderando UX enterprise — desde un primer rol de líder creativa en e-commerce regional hasta construir el área de experiencia web en una compañía global de infraestructura. Diseño sistemas operativos, no solo interfaces.",
+    "cta": "Currículum"
+  },
+  "stats": [
+    {
+      "label": "Años de experiencia"
+    },
+    {
+      "label": "Plataformas globales lideradas"
+    },
+    {
+      "label": "Design Systems construidos"
+    },
+    {
+      "label": "Idiomas publicados"
+    },
+    {
+      "label": "Alcance mensual en el pico de plataforma"
+    }
+  ],
+  "logosTitle": "Experiencia en industrias SaaS, B2B y B2C",
+  "roles": [
+    {
+      "summary": "Responsable de la estrategia de UX, los design systems, las operaciones de research y los flujos de trabajo AI-native de elastic.co.",
+      "bullets": [
+        [
+          {
+            "t": "Lideré la estrategia de UX y el diseño del rediseño del Hub de "
+          },
+          {
+            "t": "elastic.co/pricing",
+            "b": true
+          },
+          {
+            "t": " — reemplazando una landing de producto único por un hub centralizado que cubre Self-managed, Serverless y Hosted. Entregó un "
+          },
+          {
+            "t": "+59.5% de aumento en signups de Cloud",
+            "b": true
+          },
+          {
+            "t": " (la métrica de crecimiento principal de Elastic) y un "
+          },
+          {
+            "t": "89% de engagement",
+            "b": true
+          },
+          {
+            "t": " en la ruta Hosted, además de revelar un interés en Serverless que estaba oculto."
+          }
+        ],
+        [
+          {
+            "t": "Publiqué un "
+          },
+          {
+            "t": "portafolio de UX potenciado por IA en siete iniciativas",
+            "b": true
+          },
+          {
+            "t": ", con un ahorro proyectado de "
+          },
+          {
+            "t": "2.600–4.500 horas al año",
+            "b": true
+          },
+          {
+            "t": " — cerca de 2–2,5 FTEs de capacidad redirigida de la ejecución al trabajo estratégico, sin sumar headcount."
+          }
+        ],
+        [
+          {
+            "t": "Definí y puse en operación un "
+          },
+          {
+            "t": "Modelo Operativo de Web UX",
+            "b": true
+          },
+          {
+            "t": " de cinco programas (Design System y Fundamentos, Colaboración con Stakeholders, Research y Optimización de UX, Estrategia de Experiencia e IA, Proyectos Lead de UX), que dio previsibilidad a "
+          },
+          {
+            "t": "~140 entregas de página al año",
+            "b": true
+          },
+          {
+            "t": ", y escribí el "
+          },
+          {
+            "t": "Web UX Playbook",
+            "b": true
+          },
+          {
+            "t": " — adoptado por los equipos de Engineering, PMM, Brand, SEO y Localización."
+          }
+        ],
+        [
+          {
+            "t": "Lidero "
+          },
+          {
+            "t": "Project Alpha — Renovación y Madurez del Design System",
+            "b": true
+          },
+          {
+            "t": ": reconstruí la taxonomía, definí las reglas y la gobernanza del sistema, y alineé la librería de UI en Figma, la capa de referencia en Storybook y los design tokens a una sola fuente de verdad en "
+          },
+          {
+            "t": "86 componentes y 63 módulos",
+            "b": true
+          },
+          {
+            "t": ". Entregué "
+          },
+          {
+            "t": "Design Tokens v2.0",
+            "b": true
+          },
+          {
+            "t": " — 1.038 tokens en 11 colecciones mediante un pipeline de Figma MCP asistido por IA, validado como el flujo de producción."
+          }
+        ],
+        [
+          {
+            "t": "Estoy construyendo la "
+          },
+          {
+            "t": "capa de Maze Research Operations",
+            "b": true
+          },
+          {
+            "t": " — una capa operativa potenciada por IA que cubre todos los tipos de estudio de Maze, con un ahorro proyectado de "
+          },
+          {
+            "t": "680–1.040 horas al año",
+            "b": true
+          },
+          {
+            "t": " mientras cierra una brecha estructural de headcount en research. Establecí una cadencia de sprints quincenales con capacidad definida por rol y un gate de Design Ready / UX QA."
+          }
+        ]
+      ]
+    },
+    {
+      "summary": "Lideré UX/UI para paloaltonetworks.com e impulsé la madurez del design system durante dos años de trabajo web de alta visibilidad.",
+      "bullets": [
+        [
+          {
+            "t": "Recibí "
+          },
+          {
+            "t": "múltiples premios internos",
+            "b": true
+          },
+          {
+            "t": " por entregar de forma independiente un nuevo "
+          },
+          {
+            "t": "design system web",
+            "b": true
+          },
+          {
+            "t": " y un "
+          },
+          {
+            "t": "sistema de color enfocado en accesibilidad",
+            "b": true
+          },
+          {
+            "t": " — ambos adoptados como activos fundacionales en paloaltonetworks.com."
+          }
+        ],
+        [
+          {
+            "t": "Estandaricé los flujos de trabajo de UX y diseño entre funciones, lo que permitió al equipo ampliado escalar la entrega entre diseño, desarrollo, analítica, QA y marketing digital."
+          }
+        ],
+        [
+          {
+            "t": "Diseñé journeys de usuario, flujos, wireframes, prototipos y visuales de alta fidelidad para experiencias web y campañas digitales clave, fijando nuevos benchmarks internos de UX web y mobile; mentoreé diseñadores de equipos vecinos."
+          }
+        ]
+      ]
+    },
+    {
+      "period": "Dic 2021 – Abr 2023",
+      "title": "Propietaria y operadora, alquiler de corto plazo (Airbnb)",
+      "summary": "Fui dueña y administré de forma independiente una propiedad de alquiler de corto plazo en Costa Rica como emprendimiento paralelo a roles de UX full-time — experiencia del huésped, optimización del listado y precios dinámicos para huéspedes de múltiples países.",
+      "bullets": [
+        [
+          {
+            "t": "Alcancé el estatus de Superhost con una "
+          },
+          {
+            "t": "calificación de 4,97 en 39 reseñas",
+            "b": true
+          },
+          {
+            "t": " de huéspedes de varios países."
+          }
+        ],
+        [
+          {
+            "t": "Fui responsable de la experiencia del huésped y la operación de punta a punta — desde el copy y la fotografía del listado hasta los precios dinámicos y el servicio de hospitalidad."
+          }
+        ],
+        [
+          {
+            "t": "Construí una base de huéspedes recurrentes y me mantuve "
+          },
+          {
+            "t": "entre los primeros listados en las búsquedas locales",
+            "b": true
+          },
+          {
+            "t": ", con trabajo directo de SEO, precios y estrategia de contenido."
+          }
+        ]
+      ]
+    },
+    {
+      "summary": "Responsable de la estrategia global de experiencia de eCommerce, la experimentación y el design system de las tiendas online de VMware.",
+      "bullets": [
+        [
+          {
+            "t": "Creé un "
+          },
+          {
+            "t": "programa de experimentación Test & Learn",
+            "b": true
+          },
+          {
+            "t": " sobre Adobe Target y Optimizely que entregó un "
+          },
+          {
+            "t": "+9% de aumento global en la tasa de conversión",
+            "b": true
+          },
+          {
+            "t": " en un año."
+          }
+        ],
+        [
+          {
+            "t": "Lideré un "
+          },
+          {
+            "t": "rediseño del 100%",
+            "b": true
+          },
+          {
+            "t": " de la plataforma global de eCommerce y construí un "
+          },
+          {
+            "t": "design system y una librería de componentes de eCommerce",
+            "b": true
+          },
+          {
+            "t": " que subieron la eficiencia de producción un "
+          },
+          {
+            "t": "+67%",
+            "b": true
+          },
+          {
+            "t": "."
+          }
+        ],
+        [
+          {
+            "t": "Orquesté el lanzamiento de "
+          },
+          {
+            "t": "7 tiendas regionales de eCommerce",
+            "b": true
+          },
+          {
+            "t": " y lideré campañas globales localizadas a "
+          },
+          {
+            "t": "11 idiomas",
+            "b": true
+          },
+          {
+            "t": ", superando las metas de ventas en todas las regiones."
+          }
+        ],
+        [
+          {
+            "t": "Dirigí la entrega de ingeniería y diseño entre compañías, coordinando líneas de trabajo paralelas en múltiples empresas, regiones y husos horarios, y gestioné las relaciones con proveedores y agencias de punta a punta."
+          }
+        ]
+      ]
+    },
+    {
+      "summary": "Diseñadora principal de la tienda global de eCommerce de VMware — responsable del diseño de punta a punta de la e-store, además de liderar el diseño de las campañas globales de marketing en 11 idiomas.",
+      "bullets": [
+        [
+          {
+            "t": "Lideré dos rediseños completos de la tienda global de eCommerce como diseñadora principal — la renovación de la plataforma Digital River y, más tarde, la migración y el rediseño completos de Digital River a Magento — a cargo de UX/UI de punta a punta."
+          }
+        ],
+        [
+          {
+            "t": "Lideré el diseño de las campañas globales de marketing de eCommerce de VMware en "
+          },
+          {
+            "t": "11 idiomas",
+            "b": true
+          },
+          {
+            "t": " — banners, ads, redes sociales, landing pages y email — coordinando la producción de diseño con el equipo ampliado de eCommerce."
+          }
+        ],
+        [
+          {
+            "t": "Construí y mantuve la plataforma directamente con "
+          },
+          {
+            "t": "HTML, CSS, JavaScript, Magento y AEM",
+            "b": true
+          },
+          {
+            "t": ", y produje campañas de email de alto impacto con HTML, CSS y Marketo."
+          }
+        ]
+      ]
+    },
+    {
+      "summary": "Gestioné las campañas globales de email marketing de eCommerce de VMware, coordinando con equipos de Asia, Europa y América.",
+      "bullets": [
+        [
+          {
+            "t": "Desarrollé landing pages y lideré la analítica y el reporte de KPIs de las campañas globales de email marketing."
+          }
+        ],
+        [
+          {
+            "t": "Apoyé los esfuerzos de redes sociales, marketing de afiliados y paid search junto al equipo de diseño."
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Experiencia previa en liderazgo y diseño · Varias empresas",
+      "summary": "Liderazgo de marketing, marca y operaciones creativas en retail, logística y consultoría en América Latina y el Caribe.",
+      "bullets": [
+        [
+          {
+            "t": ""
+          },
+          {
+            "t": "Marketing Manager",
+            "b": true
+          },
+          {
+            "t": " · La Terminal Express (2016) — entregué "
+          },
+          {
+            "t": "+182% de cuentas nuevas, +139% de adquisición de paquetes, +125% de tráfico web y +500% de páginas visitadas",
+            "b": true
+          },
+          {
+            "t": " liderando la estrategia anual de marketing y su ejecución digital."
+          }
+        ],
+        [
+          {
+            "t": ""
+          },
+          {
+            "t": "Regional Creative Manager",
+            "b": true
+          },
+          {
+            "t": " · Aeropost Network (2012–2014) — escalé las operaciones de marca y creatividad "
+          },
+          {
+            "t": "de 2 a 40 países",
+            "b": true
+          },
+          {
+            "t": " en Centroamérica, Sudamérica y el Caribe, liderando un equipo de diseñadores y desarrolladores."
+          }
+        ],
+        [
+          {
+            "t": "Co-fundadora y Marketing Manager · Viu Marketing Center (2014–2018) — construí una consultoría que entregaba estrategia, campañas digitales y diseño UX/UI para clientes. También: Dicrearte, trabajo freelance independiente."
+          }
+        ]
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "label": "HABILIDADES",
+      "items": [
+        "Estrategia UX",
+        "Design Operations",
+        "Gobernanza y quality gates",
+        "Liderazgo y mentoría de equipos",
+        "Gestión de stakeholders",
+        "Gestión de programas entre compañías",
+        "Gestión de proveedores y agencias",
+        "Storytelling y comunicación ejecutiva",
+        "Estrategia de marketing",
+        "Estrategia de marca",
+        "Optimización de conversión (CRO)",
+        "Gestión de campañas globales",
+        "Investigación de usuarios",
+        "Journeys de usuario",
+        "Wireframing",
+        "Resolución de problemas",
+        "Gestión de proyectos"
+      ]
+    },
+    {
+      "label": "HERRAMIENTAS"
+    },
+    {
+      "label": "METODOLOGÍAS",
+      "items": [
+        "Design tokens y paridad diseño-código",
+        "Arquitectura de información",
+        "Doble diamante",
+        "Agile",
+        "Scrum",
+        "Kanban",
+        "Design Thinking"
+      ]
+    },
+    {
+      "label": "INDUSTRIAS",
+      "items": [
+        "SaaS enterprise",
+        "Ciberseguridad",
+        "eCommerce y retail",
+        "B2B",
+        "B2C"
+      ]
+    },
+    {
+      "label": "MARKETING Y CRECIMIENTO",
+      "items": [
+        "SEO",
+        "SEM",
+        "Estrategia de paid search",
+        "Email marketing",
+        "Marketing en redes sociales",
+        "Marketing de afiliados",
+        "Testing A/B",
+        "Publicidad",
+        "Marketing inbound y outbound"
+      ]
+    },
+    {
+      "label": "MARCA Y CREATIVIDAD",
+      "items": [
+        "Branding e identidad",
+        "Implementación de marca",
+        "Lealtad de marca",
+        "Diseño de identidad visual",
+        "Dirección creativa",
+        "Estrategia creativa",
+        "Gestión creativa",
+        "Desarrollo creativo estratégico",
+        "Ejecuciones creativas"
+      ]
+    }
+  ],
+  "education": [
+    "Maestría — Comunicación y Marketing · Universidad Latina de Costa Rica (2013–2015) - Tesis pendiente.",
+    "Licenciatura — Diseño Gráfico · Universidad de Costa Rica (2007–2009) - Tesis pendiente.",
+    "Bachillerato — Diseño Gráfico · Universidad de Costa Rica (2003–2007)"
+  ],
+  "languages": [
+    "Español (nativo), inglés (profesional)."
+  ]
+}

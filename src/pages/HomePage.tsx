@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { Button, Link } from "@viu/ui";
 
-import { home } from "../content";
+import { useContent } from "../i18n";
 import { Container, Media, Section } from "../components/primitives";
 import { CaseRow, GeneralWork, LogoStrip, Recommendations, Stats } from "../components/sections";
 
 export function HomePage() {
   const navigate = useNavigate();
+  const { home } = useContent();
   const { hero, cases } = home;
 
   return (
