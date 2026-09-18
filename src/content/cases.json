@@ -102,44 +102,6 @@
     }
   ],
   "study": {
-    "nav": [
-      {
-        "num": "02",
-        "label": "Context"
-      },
-      {
-        "num": "03",
-        "label": "Role & team"
-      },
-      {
-        "num": "04",
-        "label": "Strategic frame"
-      },
-      {
-        "num": "05",
-        "label": "Approach"
-      },
-      {
-        "num": "06",
-        "label": "Solution"
-      },
-      {
-        "num": "07",
-        "label": "Outcomes"
-      },
-      {
-        "num": "08",
-        "label": "Reflection"
-      },
-      {
-        "num": "07b",
-        "label": "Gallery"
-      },
-      {
-        "num": "09",
-        "label": "Next case"
-      }
-    ],
     "hero": {
       "eyebrow": "Case 01 · 2026 · VIU Design System",
       "title": "An enterprise-grade design system I built alone, with real Figma-to-code parity",
@@ -282,7 +244,7 @@
       "note": "These are craft and build-velocity metrics, not adoption or business-impact metrics — Viu doesn’t have real users yet."
     },
     "gallery": {
-      "num": "07b",
+      "num": "08",
       "label": "Gallery",
       "title": "The system, in the wild.",
       "slideHint": "SLIDE 1 / 4 — drop project visuals here",
@@ -290,13 +252,13 @@
       "note": "A sample of what shipped — the Figma library and Storybook above, with more of the system’s surfaces added over time."
     },
     "reflection": {
-      "num": "08",
+      "num": "09",
       "label": "Reflection",
       "title": "What I’d do differently.",
       "body": "I’d build the universal pre-flight check into the master skill from the first commit — I lost time twice from not calling loadAsync() before reading Figma’s real state. I’d also decide upfront how many languages I need, instead of adding that later. The real work wasn’t done by the AI: it was years of knowing how design systems actually work that made it possible to hold this together as one person. A big part of the process was teaching the AI the unwritten rules a senior designer applies without thinking — without that explicit teaching, the result doesn’t reach the level I need."
     },
     "next": {
-      "num": "09",
+      "num": "10",
       "label": "Next case",
       "title": "Elastic Pricing Hub Redesign",
       "body": "+59.5% Cloud signups · the governance model this system’s discipline was built for"

@@ -7,6 +7,23 @@ import { useContent } from "../i18n";
 import { Container, Media, Section } from "../components/primitives";
 import { CaseRow, GeneralWork } from "../components/sections";
 
+/**
+ * The article's blocks, in the order they read. The side nav is built from
+ * this, so the menu can never disagree with the page — which is exactly what
+ * had happened when the two lived in separate lists.
+ */
+const BLOCKS = [
+  "context",
+  "role",
+  "frame",
+  "approach",
+  "evidence",
+  "outcomes",
+  "gallery",
+  "reflection",
+  "next",
+] as const;
+
 /** Section heading: "04 — Strategic frame" plus the short crimson rule. */
 function BlockHead({ block }: { block: { num: string; label: string; title?: string } }) {
   return (
@@ -36,7 +53,7 @@ function Gallery({ block }: { block: CaseStudy["gallery"] }) {
   const move = (delta: number) => setSlide((s) => (s + delta + block.slides) % block.slides);
 
   return (
-    <section id="block-07b">
+    <section id={`block-${block.num}`}>
       <BlockHead block={block} />
       <div className="carousel">
         <Media
@@ -93,10 +110,10 @@ export function CaseStudyPage() {
       <Container>
         <div className="case-layout">
           <nav className="case-nav" aria-label="On this page">
-            {study.nav.map((item) => (
-              <a key={item.num} className="case-nav__item" href={`#block-${item.num}`}>
-                <span className="case-nav__num">{item.num}</span>
-                {item.label}
+            {BLOCKS.map((key) => (
+              <a key={key} className="case-nav__item" href={`#block-${study[key].num}`}>
+                <span className="case-nav__num">{study[key].num}</span>
+                {study[key].label}
               </a>
             ))}
           </nav>
@@ -133,12 +150,12 @@ export function CaseStudyPage() {
               </div>
             </header>
 
-            <section id="block-02">
+            <section id={`block-${study.context.num}`}>
               <BlockHead block={study.context} />
               <Prose paragraphs={study.context.paragraphs} />
             </section>
 
-            <section id="block-03">
+            <section id={`block-${study.role.num}`}>
               <BlockHead block={study.role} />
               <div className="role-table">
                 {study.role.rows.map((row) => (
@@ -150,12 +167,12 @@ export function CaseStudyPage() {
               </div>
             </section>
 
-            <section id="block-04">
+            <section id={`block-${study.frame.num}`}>
               <BlockHead block={study.frame} />
               <Prose paragraphs={study.frame.paragraphs} />
             </section>
 
-            <section id="block-05">
+            <section id={`block-${study.approach.num}`}>
               <BlockHead block={study.approach} />
               <div className="moves">
                 {study.approach.moves.map((move) => (
@@ -167,7 +184,7 @@ export function CaseStudyPage() {
               </div>
             </section>
 
-            <section id="block-06">
+            <section id={`block-${study.evidence.num}`}>
               <BlockHead block={study.evidence} />
               <p className="note">{study.evidence.lead}</p>
               <div className="evidence">
@@ -179,7 +196,7 @@ export function CaseStudyPage() {
               </div>
             </section>
 
-            <section id="block-07">
+            <section id={`block-${study.outcomes.num}`}>
               <BlockHead block={study.outcomes} />
               <div className="outcomes">
                 {study.outcomes.items.map((outcome) => (
@@ -195,12 +212,12 @@ export function CaseStudyPage() {
 
             <Gallery block={study.gallery} />
 
-            <section id="block-08">
+            <section id={`block-${study.reflection.num}`}>
               <BlockHead block={study.reflection} />
               <p className="quote-box">{study.reflection.body}</p>
             </section>
 
-            <section id="block-09">
+            <section id={`block-${study.next.num}`}>
               <BlockHead block={{ num: study.next.num, label: study.next.label }} />
               <a
                 className="next-case"

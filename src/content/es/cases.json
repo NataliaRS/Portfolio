@@ -97,35 +97,6 @@
     }
   ],
   "study": {
-    "nav": [
-      {
-        "label": "Contexto"
-      },
-      {
-        "label": "Rol y equipo"
-      },
-      {
-        "label": "Marco estratégico"
-      },
-      {
-        "label": "Enfoque"
-      },
-      {
-        "label": "Evidencia"
-      },
-      {
-        "label": "Resultados"
-      },
-      {
-        "label": "Reflexión"
-      },
-      {
-        "label": "Galería"
-      },
-      {
-        "label": "Siguiente caso"
-      }
-    ],
     "hero": {
       "eyebrow": "CASO 01 · 2026 · VIU DESIGN SYSTEM",
       "title": "Un design system de nivel enterprise que construí sola, con paridad real entre Figma y código",
