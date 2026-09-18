@@ -1,0 +1,542 @@
+{
+  "hero": {
+    "eyebrow": "About",
+    "title": "Hi, I am Natalia Rodríguez S",
+    "body": "18+ years leading enterprise UX — from a first creative lead role in regional e-commerce to building the web experience org at a global infrastructure company. I design operating systems, not just interfaces."
+  },
+  "stats": [
+    {
+      "value": "18+",
+      "label": "Years experience"
+    },
+    {
+      "value": "4+",
+      "label": "Global platforms led"
+    },
+    {
+      "value": "4",
+      "label": "Design Systems built"
+    },
+    {
+      "value": "11",
+      "label": "Languages shipped"
+    },
+    {
+      "value": "5M+",
+      "label": "Monthly reach at peak platform"
+    }
+  ],
+  "logosTitle": "SaaS, B2B & B2C Industry Experience",
+  "roles": [
+    {
+      "initials": "EL",
+      "period": "Oct 2024 – Jun 2026",
+      "title": "Senior Manager, UX & Design (Web UX) · Elastic",
+      "summary": "Owns UX strategy, design systems, research operations and AI-native workflows for elastic.co.",
+      "bullets": [
+        [
+          {
+            "t": "Led UX strategy and design for the "
+          },
+          {
+            "t": "elastic.co/pricing Hub redesign",
+            "b": true
+          },
+          {
+            "t": " — replacing a single-product landing page with a centralized hub across Self-managed, Serverless and Hosted. Delivered a "
+          },
+          {
+            "t": "+59.5% lift in Cloud signups",
+            "b": true
+          },
+          {
+            "t": " (Elastic’s primary growth metric) and an "
+          },
+          {
+            "t": "89% engagement rate",
+            "b": true
+          },
+          {
+            "t": " on the Hosted path, while surfacing previously hidden interest in Serverless."
+          }
+        ],
+        [
+          {
+            "t": "Shipped an "
+          },
+          {
+            "t": "AI-powered UX portfolio across seven initiatives",
+            "b": true
+          },
+          {
+            "t": ", projected to save "
+          },
+          {
+            "t": "2,600–4,500 hours a year",
+            "b": true
+          },
+          {
+            "t": " — about 2–2.5 FTEs of capacity redirected from execution to strategic work, with no added headcount."
+          }
+        ],
+        [
+          {
+            "t": "Defined and operationalized a "
+          },
+          {
+            "t": "Web UX Operating Model",
+            "b": true
+          },
+          {
+            "t": " of five programs (Design System & Foundations, Stakeholder Collaboration, UX Research & Optimization, Experience Strategy & IA, UX Lead Projects), bringing predictability to "
+          },
+          {
+            "t": "~140 page deliveries a year",
+            "b": true
+          },
+          {
+            "t": ", and authored the "
+          },
+          {
+            "t": "Web UX Playbook",
+            "b": true
+          },
+          {
+            "t": " — adopted by Engineering, PMM, Brand, SEO and Localization partners."
+          }
+        ],
+        [
+          {
+            "t": "Leads "
+          },
+          {
+            "t": "Project Alpha — Design System Renovation & Maturity",
+            "b": true
+          },
+          {
+            "t": ": rebuilt taxonomy, defined system rules and governance, and aligned the Figma UI library, Storybook reference layer and design tokens to a single source of truth across "
+          },
+          {
+            "t": "86 components and 63 modules",
+            "b": true
+          },
+          {
+            "t": ". Delivered "
+          },
+          {
+            "t": "Design Tokens v2.0",
+            "b": true
+          },
+          {
+            "t": " — 1,038 tokens across 11 collections through an AI-assisted Figma MCP pipeline, validated as the production workflow."
+          }
+        ],
+        [
+          {
+            "t": "Building the "
+          },
+          {
+            "t": "Maze Research Operations layer",
+            "b": true
+          },
+          {
+            "t": " — an AI-powered operational layer covering every Maze study type, projected to save "
+          },
+          {
+            "t": "680–1,040 hours a year",
+            "b": true
+          },
+          {
+            "t": " while closing a structural research-headcount gap. Established a bi-weekly sprint cadence with defined capacity per role and a Design Ready / UX QA gate."
+          }
+        ]
+      ]
+    },
+    {
+      "initials": "PA",
+      "period": "2022 – 2024",
+      "title": "Lead User Experience Designer · Palo Alto Networks",
+      "summary": "Led UX/UI for paloaltonetworks.com and drove design system maturity across two years of high-visibility web work.",
+      "bullets": [
+        [
+          {
+            "t": "Earned "
+          },
+          {
+            "t": "multiple internal awards",
+            "b": true
+          },
+          {
+            "t": " for independently delivering a new "
+          },
+          {
+            "t": "web design system",
+            "b": true
+          },
+          {
+            "t": " and an "
+          },
+          {
+            "t": "accessibility-focused color system",
+            "b": true
+          },
+          {
+            "t": " — both adopted as foundational assets across paloaltonetworks.com."
+          }
+        ],
+        [
+          {
+            "t": "Standardized cross-functional UX and design workflows that let the broader team scale delivery across design, development, analytics, QA and digital marketing."
+          }
+        ],
+        [
+          {
+            "t": "Designed user journeys, flows, wireframes, prototypes and high-fidelity visuals for major web experiences and digital campaigns, setting new internal benchmarks for web and mobile UX; mentored designers across adjacent teams."
+          }
+        ]
+      ]
+    },
+    {
+      "initials": "AB",
+      "period": "Dec 2021 – Apr 2023",
+      "title": "Owner-Operator, Short-Term Rental (Airbnb)",
+      "summary": "Independently owned and managed a short-term rental property in Costa Rica as a side venture alongside full-time UX roles — guest experience, listing optimization and dynamic pricing for guests from multiple countries.",
+      "bullets": [
+        [
+          {
+            "t": "Achieved Superhost status with a "
+          },
+          {
+            "t": "4.97 rating across 39 reviews",
+            "b": true
+          },
+          {
+            "t": " from guests across multiple countries."
+          }
+        ],
+        [
+          {
+            "t": "Owned end-to-end guest experience and operations — from listing copy and photography to dynamic pricing and hospitality service."
+          }
+        ],
+        [
+          {
+            "t": "Built a base of repeat guests and consistently ranked "
+          },
+          {
+            "t": "among the top listings in local search results",
+            "b": true
+          },
+          {
+            "t": ", through hands-on SEO, pricing and content strategy."
+          }
+        ]
+      ]
+    },
+    {
+      "initials": "VM",
+      "period": "2020 – 2022",
+      "title": "eCommerce Project & Production Manager (UX/UI)",
+      "summary": "Owned global eCommerce experience strategy, experimentation and design system for VMware’s online stores.",
+      "bullets": [
+        [
+          {
+            "t": "Created a "
+          },
+          {
+            "t": "Test & Learn experimentation program",
+            "b": true
+          },
+          {
+            "t": " on Adobe Target and Optimizely that delivered a "
+          },
+          {
+            "t": "+9% global conversion rate increase",
+            "b": true
+          },
+          {
+            "t": " in one year."
+          }
+        ],
+        [
+          {
+            "t": "Led a "
+          },
+          {
+            "t": "100% redesign",
+            "b": true
+          },
+          {
+            "t": " of the global eCommerce platform and built an "
+          },
+          {
+            "t": "eCommerce design system and component library",
+            "b": true
+          },
+          {
+            "t": " that boosted production efficiency by "
+          },
+          {
+            "t": "+67%",
+            "b": true
+          },
+          {
+            "t": "."
+          }
+        ],
+        [
+          {
+            "t": "Orchestrated the launch of "
+          },
+          {
+            "t": "7 regional eCommerce stores",
+            "b": true
+          },
+          {
+            "t": " and led global campaigns localized into "
+          },
+          {
+            "t": "11 languages",
+            "b": true
+          },
+          {
+            "t": ", exceeding sales goals across regions."
+          }
+        ],
+        [
+          {
+            "t": "Directed cross-company engineering and design delivery, coordinating parallel workstreams across multiple companies, regions and time zones, and managed vendor and agency relationships end to end."
+          }
+        ]
+      ]
+    },
+    {
+      "initials": "VM",
+      "period": "2016 – 2020",
+      "title": "Senior eCommerce Digital Designer · VMware",
+      "summary": "Principal designer for VMware’s global eCommerce store — owned the end-to-end design of the e-store itself, in addition to leading design for global marketing campaigns across 11 languages.",
+      "bullets": [
+        [
+          {
+            "t": "Led two full redesigns of the global eCommerce store as principal designer — the Digital River platform renewal, and later the full migration and redesign from Digital River to Magento — owning UX/UI, page layouts, typography and visual system each time."
+          }
+        ],
+        [
+          {
+            "t": "Led design for VMware’s global eCommerce marketing campaigns in "
+          },
+          {
+            "t": "11 languages",
+            "b": true
+          },
+          {
+            "t": " — banners, ads, social media, landing pages and email — coordinating design output with the broader eCommerce team."
+          }
+        ],
+        [
+          {
+            "t": "Built and maintained the platform hands-on with "
+          },
+          {
+            "t": "HTML, CSS, JavaScript, Magento and AEM",
+            "b": true
+          },
+          {
+            "t": ", and produced high-impact email campaigns with HTML, CSS and Marketo."
+          }
+        ]
+      ]
+    },
+    {
+      "initials": "VM",
+      "period": "2015 – 2016",
+      "title": "eCommerce Marketing Coordinator · VMware / STT Group",
+      "summary": "Managed global eCommerce email marketing campaigns for VMware, coordinating with teams across Asia, Europe and the Americas.",
+      "bullets": [
+        [
+          {
+            "t": "Developed landing pages and led analytics/KPI reporting for global email marketing campaigns."
+          }
+        ],
+        [
+          {
+            "t": "Supported social media, affiliate marketing and paid search efforts alongside the design team."
+          }
+        ]
+      ]
+    },
+    {
+      "initials": "VA",
+      "period": "2007 – 2016",
+      "title": "Earlier leadership & design experience · Various",
+      "summary": "Marketing leadership, brand and creative operations across retail, logistics and consultancy in Latin America and the Caribbean.",
+      "bullets": [
+        [
+          {
+            "t": ""
+          },
+          {
+            "t": "Marketing Manager",
+            "b": true
+          },
+          {
+            "t": " · La Terminal Express (2016) — delivered "
+          },
+          {
+            "t": "+182% new accounts, +139% package acquisitions, +125% web traffic and +500% pages visited",
+            "b": true
+          },
+          {
+            "t": " by leading the annual marketing strategy and digital execution."
+          }
+        ],
+        [
+          {
+            "t": ""
+          },
+          {
+            "t": "Regional Creative Manager",
+            "b": true
+          },
+          {
+            "t": " · Aeropost Network (2012–2014) — scaled brand and creative operations "
+          },
+          {
+            "t": "from 2 to 40 countries",
+            "b": true
+          },
+          {
+            "t": " across Central America, South America and the Caribbean, managing a team of designers and developers."
+          }
+        ],
+        [
+          {
+            "t": "Co-Founder & Marketing Manager · Viu Marketing Center (2014–2018) — built a consultancy delivering strategy, digital campaigns and UX/UI design for clients. Also: Dicrearte, independent freelance design practice (2005–2010); Principal Graphic Designer and Frontend & Social Media Lead at Aeropost (2009–2012); earlier design roles at CNET Technology Systems, Jotabequ Publicidad and Promotora A Y J Turística (2007–2009)."
+          }
+        ]
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "label": "SKILLS",
+      "items": [
+        "UX Strategy",
+        "Design Operations",
+        "Governance & Quality Gates",
+        "Team Leadership & Mentoring",
+        "Stakeholder Management",
+        "Cross-Company Program Management",
+        "Vendor & Agency Management",
+        "Storytelling & Executive Communication",
+        "Marketing Strategy",
+        "Brand Strategy",
+        "Conversion Rate Optimization (CRO)",
+        "Global Campaign Management",
+        "User Research",
+        "User Journeys",
+        "Wireframing",
+        "Problem Solving",
+        "Project Management"
+      ]
+    },
+    {
+      "label": "TOOLS",
+      "items": [
+        "Figma (+MCP)",
+        "Storybook",
+        "Maze",
+        "Adobe Target",
+        "Optimizely",
+        "AEM",
+        "Magento",
+        "Marketo",
+        "HTML/CSS/JS",
+        "Adobe Photoshop",
+        "Illustrator",
+        "After Effects",
+        "InDesign",
+        "Dreamweaver",
+        "Claude",
+        "Claude Code",
+        "ChatGPT",
+        "Midjourney",
+        "Gemini",
+        "Perplexity",
+        "Google Analytics",
+        "Google Adwords",
+        "Mailchimp"
+      ]
+    },
+    {
+      "label": "METHODOLOGIES",
+      "items": [
+        "Design Tokens & Design-to-Code Parity",
+        "Information Architecture",
+        "Double Diamond",
+        "Agile",
+        "Scrum",
+        "Kanban",
+        "Design Thinking"
+      ]
+    },
+    {
+      "label": "INDUSTRIES",
+      "items": [
+        "Enterprise SaaS",
+        "Cybersecurity",
+        "eCommerce & Retail",
+        "B2B",
+        "B2C"
+      ]
+    },
+    {
+      "label": "MARKETING & GROWTH",
+      "items": [
+        "SEO",
+        "SEM",
+        "Paid Search Strategy",
+        "Email Marketing",
+        "Social Media Marketing",
+        "Affiliate Marketing",
+        "A/B Testing",
+        "Advertising",
+        "Inbound & Outbound Marketing"
+      ]
+    },
+    {
+      "label": "BRANDING & CREATIVE",
+      "items": [
+        "Branding & Identity",
+        "Brand Implementation",
+        "Brand Loyalty",
+        "Visual Identity Design",
+        "Creative Direction",
+        "Creative Strategy",
+        "Creative Management",
+        "Strategic Creative Development",
+        "Creative Executions"
+      ]
+    }
+  ],
+  "education": [
+    "Master’s Degree — Communication & Marketing · Universidad Latina de Costa Rica (2013–2015) - Thesis pending.",
+    "Licentiate Degree — Graphic Design · Universidad de Costa Rica (2007–2009) - Thesis pending.",
+    "Bachelor’s Degree — Graphic Design · Universidad de Costa Rica (2003–2007)"
+  ],
+  "languages": [
+    "Spanish (native), English (professional)."
+  ],
+  "certifications": [
+    "AI & UX Design — AI for Designers, IxDF (2024); Foundations of User Experience Design, Google (2024); Journey Mapping, IxDF (2024); Human-Centered Design, UPEACE (2018).",
+    "Leadership, Strategy & Communication — Executive Women Leadership Development Program, INCAE (2022); Accelerated Project Management, GE360 (2021); Innovation Strategy Boot Camp, Cocolab / Universidad Latina de Costa Rica (2018); Strategy Planning Boot Camp, Universidad Latina de Costa Rica (2018); Influence, Storytelling and Presenting, UPEACE (2018); Shane Snow on Storytelling, LinkedIn Learning (2024); Duarte RESONATE Workshop (2018); Coaching for Business Performance, VMware Education (2021); Communication Techniques, VMware Education (2018); Desarrollo de un Equipo Líder para el Cambio Organizacional, Taller de Integración; Work Life Balance and Emotional Intelligence Workshop, VMware; Planeamiento Estratégico: Decodificación de Marcas y el Consumidor, Taller Jotabequ; Seminario Empresarial, Iglesia Oasis de Esperanza; Finanzas para Todos, Taller Jotabequ.",
+    "Agile & Delivery — Curso Profesional de Scrum, Platzi (2023); Scrum Master Professional Certificate, Certiprof (2022); Kanban System Design, Egeria Consulting (2020); Team Kanban Practitioner, Egeria Consulting (2020).",
+    "Adobe Experience Cloud & MarTech — Customize Digital Assets in AEM; Advanced Analysis Workspace Certificate; Develop Websites and Components in AEM; Data Analysis with Analysis Workspace; Personalize Dynamic Content using Adobe Target Recommendations; Magento Commerce Cloud for Developers; Leverage Experience Cloud Audiences in Adobe Target; Magento 2 Front-End for Developers; Create Web Experiences Using AEM; Personalize and Automate with Adobe Target; Fundamentals of Adobe Target; Marketo Core Concepts I & II; Manage and Deliver Digital Assets Using AEM; Introduction to Managing your Magento Store — all Adobe (2022).",
+    "Web & Frontend Development — Curso Profesional de NODE.JS y JavaScript, Platzi/Mejorando.la (2014); Curso Profesional de PHP con Laravel, Platzi/Mejorando.la (2014); Curso Profesional de FrontEnd, Platzi/Mejorando.la (2014); Curso de Diseño Web Online, Platzi/Mejorando.la (2014); Curso de Diseño Gráfico de Interfaces y UX, Platzi/Mejorando.la (2014); Introducción a la Programación en Java, TEC; ¿Cómo Aprender a Programar?, TEC.",
+    "Marketing & Growth — Marketing y Estrategia Digital, Platzi/Mejorando.la (2014); Curso Profesional de Google Adwords, Platzi/Mejorando.la (2014); Activación de Marcas, Taller Jotabequ; Actualización en Medios para Creativos y Diseñadores, Taller Jotabequ; Actualización en Producción Audiovisual, Taller Jotabequ; SMLatam 2011, Taller de Social Media Costa Rica; Seminario Shopping & Shopper, Taller Jotabequ.",
+    "Creative Craft — Asesores Gráficos: Dibujo de Comics; Copywriting 1 & 2, Clandestina; Diseño Web, Clandestina; Curso de Vitral, Facultad de Bellas Artes UCR; Diseñadora Floral Profesional, Instituto Mexicano Técnico Floral.",
+    "Languages — Inglés Intensivo para Adultos, Centro Cultural Costarricense Norteamericano (2017).",
+    "Other — Animal Hunting, FID – Taller Insight.",
+    "Driver’s License — B1 (car), A2 (motorcycle) · Costa Rica."
+  ]
+}

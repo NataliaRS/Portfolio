@@ -1,0 +1,15 @@
+{
+  "name": "@viu/design-tokens",
+  "version": "0.1.0",
+  "description": "VIU Design System — design tokens (vendored build from NataliaRS/Viu).",
+  "type": "module",
+  "license": "UNLICENSED",
+  "main": "dist/tokens.js",
+  "types": "dist/tokens.d.ts",
+  "exports": {
+    ".": { "types": "./dist/tokens.d.ts", "import": "./dist/tokens.js" },
+    "./css": "./dist/tokens.css",
+    "./json": "./dist/tokens.json"
+  },
+  "files": ["dist"]
+}

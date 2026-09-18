@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "name": "Natalia Rodríguez S.",
+    "links": [
+      "Work",
+      "Leadership",
+      "About",
+      "Fun"
+    ],
+    "cta": "Resume",
+    "themeLabels": {
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "footer": {
+    "name": "Natalia Rodríguez S.",
+    "blurb": "AI-native UX leader building operating systems that compound team capacity for global B2B web experiences. Based in Costa Rica.",
+    "columns": [
+      {
+        "title": "Site",
+        "items": [
+          "Home",
+          "Work",
+          "About",
+          "Leadership",
+          "Fun"
+        ]
+      },
+      {
+        "title": "Contact",
+        "items": [
+          "Email",
+          "WhatsApp",
+          "LinkedIn"
+        ]
+      }
+    ],
+    "resume": {
+      "eyebrow": "Resume",
+      "title": "Director / Head of UX",
+      "cta": "Download résumé"
+    },
+    "copyright": "© 2026 Natalia Rodríguez Salas. All rights reserved.",
+    "legal": "Privacy · Terms"
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "list": [
+    {
+      "slug": "viu",
+      "eyebrow": "Case 01 — VIU",
+      "title": "A design system with zero design debt.",
+      "cta": "Ver caso",
+      "points": [
+        {
+          "title": "Figma-to-code parity →",
+          "body": "Scripts enforce token and component parity — no drift between design and prod."
+        },
+        {
+          "title": "CI-gated releases →",
+          "body": "Every component ships through CI with visual and a11y checks."
+        },
+        {
+          "title": "Solo, end-to-end →",
+          "body": "Brand, tokens, components, docs and governance — built by one person."
+        }
+      ]
+    },
+    {
+      "slug": "ai-ops",
+      "eyebrow": "Case 02 — AI Ops",
+      "title": "AI-native workflows that gave back 2,600–4,500 hours a year.",
+      "cta": "Ver caso",
+      "points": [
+        {
+          "title": "Seven initiatives →",
+          "body": "A portfolio of AI-powered UX operations, no added headcount."
+        },
+        {
+          "title": "Design Ready / QA gate →",
+          "body": "A defined gate so AI output meets a senior bar before it ships."
+        },
+        {
+          "title": "Capacity, not headcount →",
+          "body": "2–2.5 FTEs of capacity redirected from execution to strategy."
+        }
+      ]
+    },
+    {
+      "slug": "elastic",
+      "eyebrow": "Case 03 — Elastic",
+      "title": "+59.5% Cloud signups from a pricing hub redesign.",
+      "cta": "Ver caso",
+      "points": [
+        {
+          "title": "Centralized hub →",
+          "body": "Replaced a single-product page across Self-managed, Serverless and Hosted."
+        },
+        {
+          "title": "89% engagement →",
+          "body": "On the Hosted path, with previously hidden Serverless interest surfaced."
+        },
+        {
+          "title": "Elastic’s primary growth metric →",
+          "body": "Cloud signups — the top-line number the redesign was built to move."
+        }
+      ]
+    },
+    {
+      "slug": "vmware",
+      "eyebrow": "Case 04 — VMware",
+      "title": "+67% production efficiency across 7 regional stores.",
+      "cta": "Ver caso",
+      "points": [
+        {
+          "title": "Inclusive system →",
+          "body": "A component library rebuilt the entire eCommerce store on."
+        },
+        {
+          "title": "11 languages, one library →",
+          "body": "No per-region rebuild — components flex across locales."
+        },
+        {
+          "title": "+9% conversion →",
+          "body": "Instrumented components made the Test & Learn program cheap to run."
+        }
+      ]
+    },
+    {
+      "slug": "palo-alto",
+      "eyebrow": "Case 05 — Palo Alto",
+      "title": "A design system built independently, adopted as foundational.",
+      "cta": "Ver caso",
+      "points": [
+        {
+          "title": "Accessibility-first color →",
+          "body": "A dedicated accessible color system, not an afterthought."
+        },
+        {
+          "title": "Cross-functional adoption →",
+          "body": "Standardized workflows across design, dev, analytics and QA."
+        },
+        {
+          "title": "Internal recognition →",
+          "body": "Earned multiple internal awards for the system and its impact."
+        }
+      ]
+    }
+  ],
+  "study": {
+    "nav": [
+      {
+        "num": "02",
+        "label": "Context"
+      },
+      {
+        "num": "03",
+        "label": "Role & team"
+      },
+      {
+        "num": "04",
+        "label": "Strategic frame"
+      },
+      {
+        "num": "05",
+        "label": "Approach"
+      },
+      {
+        "num": "06",
+        "label": "Solution"
+      },
+      {
+        "num": "07",
+        "label": "Outcomes"
+      },
+      {
+        "num": "08",
+        "label": "Reflection"
+      },
+      {
+        "num": "07b",
+        "label": "Gallery"
+      },
+      {
+        "num": "09",
+        "label": "Next case"
+      }
+    ],
+    "hero": {
+      "eyebrow": "Case 01 · 2026 · VIU Design System",
+      "title": "An enterprise-grade design system I built alone, with real Figma-to-code parity",
+      "tags": [
+        "AI DESIGN SYSTEMS LEADER",
+        "DESIGN SYSTEMS / ENTERPRISE-GRADE",
+        "2026"
+      ],
+      "accent": {
+        "value": "73 components",
+        "note": "Verified Figma-to-code parity — built solo, over one calendar month of intermittent work."
+      },
+      "gallery": [
+        {
+          "image": "case-viu-figma.png",
+          "caption": "Figma — the Chip component with full Doc annotations: type, states, and canon usage rules."
+        },
+        {
+          "image": "case-viu-storybook.png",
+          "caption": "Storybook, themed as a Viu product — accessibility check, language and dark/light toggle built in.",
+          "link": "View the live Storybook →"
+        }
+      ]
+    },
+    "context": {
+      "num": "02",
+      "label": "Context & stakes",
+      "title": "Can an AI-built system hold real governance, or is it surface-level craft?",
+      "paragraphs": [
+        "After years leading design systems with teams of dozens at Elastic and VMware, I wanted a direct test: can an AI-built design system hold the same level of governance and brand fidelity as one built by a full team — or does the result end up as surface-level craft with no corporate foundations underneath?",
+        "My hypothesis: domain knowledge, not headcount, is what holds a real system together. If that’s true, the same rigor should survive even when the person directing understands the domain but the one executing is a model.",
+        "A second, harder test ran alongside it: that the library would hold up when used to compose layouts I didn’t hand-design myself — not just display each component in isolation."
+      ]
+    },
+    "role": {
+      "num": "03",
+      "label": "Role & team",
+      "title": "Who did what.",
+      "rows": [
+        {
+          "label": "MY ROLE",
+          "body": "AI Design Systems Leader — owned direction, governance and decision-making at every layer (taxonomy, tokens, accessibility, architecture). I delegated execution to Claude, under skills I designed and governed myself."
+        },
+        {
+          "label": "DURATION",
+          "body": "1 month (calendar) — intermittent work, never full-time. Original goal was under 3 months; I landed earlier and with fewer hours than budgeted."
+        },
+        {
+          "label": "TEAM",
+          "body": "Solo, end-to-end. No human collaborators — I delegated execution to Claude under my direction and approval at every stage."
+        },
+        {
+          "label": "SCOPE",
+          "body": "Personal brand system (Viu): foundations, 73 Figma components (29 atoms · 35 molecules · 9 organisms + 4 patterns), the @viu/ui library in React with Storybook, and the NataliaRS/Viu repo."
+        },
+        {
+          "label": "TOOLS",
+          "body": "Figma (+ MCP) · Claude · Claude Code · Storybook · React"
+        }
+      ]
+    },
+    "frame": {
+      "num": "04",
+      "label": "Strategic frame",
+      "title": "\"Use AI to design faster\" was the tempting framing. I chose a harder one.",
+      "paragraphs": [
+        "The easy version of this project was \"use AI to go faster.\" The version I actually ran: keep the same real tools — Figma for design, real code for production — and use AI as the executor under my direction, not as an autonomous generator.",
+        "My hypothesis: design-to-code parity and absolute brand fidelity don’t have to be sacrificed when the person directing understands the domain, even if the one executing is a model.",
+        "Every process was new — taxonomy, skills, Figma-to-code verification flows — I defined them as I went, with no prior template, no added headcount, and no new budget line: just my existing Claude and ChatGPT accounts."
+      ]
+    },
+    "approach": {
+      "num": "05",
+      "label": "Approach",
+      "title": "Five moves.",
+      "moves": [
+        {
+          "title": "01 · Master skill",
+          "body": "Before touching a component, I fixed brand identity and locks, governance, a universal pre-flight check that forces verification of Figma’s real state before every change, and skill updates at the close of every batch — so knowledge wouldn’t get lost between sessions."
+        },
+        {
+          "title": "02 · Reference skills",
+          "body": "On top of that scaffolding: component taxonomy, token and state canon, and technical Figma learnings — like loadAsync() being mandatory before reading children, or that an instance’s internals don’t surface with findAll()."
+        },
+        {
+          "title": "03 · Taxonomy",
+          "body": "Foundations → Components → Patterns, with explicit rules so similar-looking categories don’t collapse into each other: Badge and Tag communicate state, not interactive; Pill and Chip are actioned; Notification badge overlays something else."
+        },
+        {
+          "title": "04 · Execution with parity, functional on both sides",
+          "body": "Claude connected to Figma via MCP, with the full library built in code (NataliaRS/Viu) and parity verified at every step — a continuous loop where Figma is the single source of truth, not a one-time migration."
+        },
+        {
+          "title": "05 · Storybook as a product, not documentation",
+          "body": "The full Viu brand applied to Storybook itself: a built-in accessibility check per component, a two-language toggle, a light/dark toggle per panel, and a direct link from every component to its Figma node."
+        }
+      ]
+    },
+    "evidence": {
+      "num": "06",
+      "label": "Evidence",
+      "title": "What holds it up.",
+      "lead": "Not a claim — a set of specific, checkable decisions.",
+      "items": [
+        "My contrast audit corrected success-solid.light from green.600 to green.700 to meet WCAG AA (7.48:1) — not an aesthetic call, an accessibility decision backed by a number.",
+        "I had mis-canonized the \"disabled\" mechanism using opacity; reverted it to explicit tokens (bg-disabled/text-disabled) as soon as I caught it.",
+        "Border-contrast failures are documented as accepted exceptions under WCAG 1.4.11 — not ignored gaps.",
+        "The 73/74/77 reconciliation (Figma / publishable folders / manifest) was investigated component by component until every difference had a named cause, instead of accepting it as \"expected noise.\"",
+        "The accessibility check lives inside Storybook, at the individual component level — not as an external audit separate from the daily workflow.",
+        "Every component links directly to its Figma node — parity isn’t a claim, it’s verifiable with one click from the same place where the component is consumed.",
+        "I ran test-and-learn experiments in the Figma sandbox: recomposing reference layouts from other brands using only existing Viu components, with no ad hoc pieces — validating that the taxonomy and tokens hold real compositions, not just isolated demos."
+      ]
+    },
+    "outcomes": {
+      "num": "07",
+      "label": "Outcomes",
+      "title": "What it measures — and what it doesn’t.",
+      "items": [
+        {
+          "value": "73",
+          "label": "FIGMA COMPONENTS",
+          "body": "29 atoms · 35 molecules · 9 organisms + 4 patterns — built from zero, with no prior system, over one month of intermittent work."
+        },
+        {
+          "value": "74 / 77",
+          "label": "VERIFIED FIGMA-TO-CODE PARITY",
+          "body": "74 publishable folders in @viu/ui against 77 manifest entries — the difference of 3 is traced and explained, not an unaudited gap."
+        },
+        {
+          "value": "1",
+          "label": "TEAM OF ONE",
+          "body": "No added headcount, no new budget, no collaborators — every direction and execution decision under my own responsibility."
+        },
+        {
+          "value": "4/4",
+          "label": "QUALITY GATES PASSING GREEN",
+          "body": "Contrast audit (WCAG), token-usage audit, orphan-component ghost-check, and literal linting — automated verification, not a \"vibe-coded\" system."
+        }
+      ],
+      "note": "These are craft and build-velocity metrics, not adoption or business-impact metrics — Viu doesn’t have real users yet."
+    },
+    "gallery": {
+      "num": "07b",
+      "label": "Gallery",
+      "title": "The system, in the wild.",
+      "slideHint": "SLIDE 1 / 4 — drop project visuals here",
+      "slides": 4,
+      "note": "A sample of what shipped — the Figma library and Storybook above, with more of the system’s surfaces added over time."
+    },
+    "reflection": {
+      "num": "08",
+      "label": "Reflection",
+      "title": "What I’d do differently.",
+      "body": "I’d build the universal pre-flight check into the master skill from the first commit — I lost time twice from not calling loadAsync() before reading Figma’s real state. I’d also decide upfront how many languages I need, instead of adding that later. The real work wasn’t done by the AI: it was years of knowing how design systems actually work that made it possible to hold this together as one person. A big part of the process was teaching the AI the unwritten rules a senior designer applies without thinking — without that explicit teaching, the result doesn’t reach the level I need."
+    },
+    "next": {
+      "num": "09",
+      "label": "Next case",
+      "title": "Elastic Pricing Hub Redesign",
+      "body": "+59.5% Cloud signups · the governance model this system’s discipline was built for"
+    }
+  }
+}

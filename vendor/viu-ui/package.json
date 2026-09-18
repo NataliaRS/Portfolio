@@ -1,0 +1,16 @@
+{
+  "name": "@viu/ui",
+  "version": "0.1.0",
+  "description": "VIU Design System — React component library (vendored build from NataliaRS/Viu).",
+  "type": "module",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./styles": "./dist/index.css"
+  },
+  "files": ["dist"],
+  "peerDependencies": { "react": ">=18", "react-dom": ">=18" }
+}

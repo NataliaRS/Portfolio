@@ -1,0 +1,119 @@
+{
+  "disclaimer": "Open to Manager / Director UX roles",
+  "hero": {
+    "eyebrow": "AI-native UX leader · Global B2B web experiences",
+    "title": "Operating systems for design that compound team capacity.",
+    "body": "18+ years leading enterprise UX — from a first creative lead role in regional e-commerce to building the web experience org at a global infrastructure company. I design the systems, not just the screens.",
+    "primaryCta": "See Use Cases",
+    "secondaryCta": "How I lead →",
+    "figureCaption": "VIU — design system, live component canvas",
+    "figureImage": "hero-viu.png"
+  },
+  "stats": [
+    {
+      "value": "18+",
+      "label": "Years experience"
+    },
+    {
+      "value": "4+",
+      "label": "Global platforms led"
+    },
+    {
+      "value": "4",
+      "label": "Design Systems build"
+    },
+    {
+      "value": "11",
+      "label": "Languages shipped"
+    },
+    {
+      "value": "5M+",
+      "label": "Monthly reach at peak platform"
+    }
+  ],
+  "logosTitle": "SaaS & B2C Industry Experience",
+  "recommendations": {
+    "title": "Recommedations",
+    "lead": {
+      "quote": "I wholeheartedly recommend Natalia as a design lead for any team... Her contributions at Palo Alto Networks were highly valued by management... She earned multiple awards for independently developing both a design system and a color system to enhance accessibility.",
+      "name": "Deepthi Katta",
+      "role": "Sr. Director, Palo Alto Networks · Natalia’s manager",
+      "initials": "DK"
+    },
+    "cards": [
+      {
+        "quote": "“Natalia's commitment to user-centered design has been crucial to our success... She consistently delivers projects on time while maintaining clear, open communication about their progress... Her dedication to continuous improvement and innovation goes beyond her core responsibilities.”",
+        "name": "Gaurav Sirohi",
+        "role": "Director, Palo Alto Networks"
+      },
+      {
+        "quote": "“Natalia was my direct manager at VMware... She came up with a project management system that allow us to have a better control of our daily tasks... by dedicating weekly one-on-one time to finding out about what each person enjoys most at work, your ambitions, and where see yourself headed... she can make each member of her team feel accountable and valuable by not micro-managing them.”",
+        "name": "Sam Moreno",
+        "role": "Digital Director · reported to Natalia, VMware"
+      },
+      {
+        "quote": "“Natalia served as the Lead UX Designer for our website... She exemplified initiative by spearheading the development of our design system, and her innovative ideas even gained recognition and sponsorship on Shark Tank... she incorporated analytics to ensure our redesign efforts consistently enhanced the user experience.”",
+        "name": "Sham Sundar",
+        "role": "Principal Solutions Architect · teammate"
+      }
+    ],
+    "link": "Want to see more recommendations? LinkedIn"
+  },
+  "cases": {
+    "title": "Case studies",
+    "link": "See all the Case Studies",
+    "items": [
+      {
+        "slug": "viu",
+        "eyebrow": "Case 01 — VIU",
+        "title": "A design system with zero design debt.",
+        "cta": "Ver caso",
+        "points": [
+          {
+            "title": "Figma-to-code parity →",
+            "body": "Scripts enforce token and component parity — no drift between design and prod."
+          },
+          {
+            "title": "CI-gated releases →",
+            "body": "Every component ships through CI with visual and a11y checks."
+          },
+          {
+            "title": "Solo, end-to-end →",
+            "body": "Brand, tokens, components, docs and governance — built by one person."
+          }
+        ]
+      },
+      {
+        "slug": "elastic",
+        "eyebrow": "Case 02 — Elastic",
+        "title": "Governance that let a web org move without me.",
+        "cta": "Ver caso",
+        "points": [
+          {
+            "title": "Governance, not gatekeeping →",
+            "body": "Teams ship without waiting on me to unblock them."
+          },
+          {
+            "title": "Self-documenting →",
+            "body": "Decisions are captured where the work happens."
+          },
+          {
+            "title": "Scaled the web org →",
+            "body": "elastic.co moves faster with fewer dependencies."
+          }
+        ]
+      }
+    ]
+  },
+  "generalWork": {
+    "title": "General work",
+    "items": [
+      "Design ops",
+      "CRO / testing",
+      "Localization",
+      "AI concierge",
+      "Brand systems"
+    ],
+    "link": "See more work in Behance"
+  }
+}
