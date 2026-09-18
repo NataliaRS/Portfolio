@@ -479,5 +479,44 @@
   ],
   "languages": [
     "Español (nativo), inglés (profesional)."
-  ]
+  ],
+  "certifications": [
+    {
+      "category": "IA y Diseño UX"
+    },
+    {
+      "category": "Liderazgo, Estrategia y Comunicación"
+    },
+    {
+      "category": "Agile y Entrega"
+    },
+    {
+      "category": "Adobe Experience Cloud y MarTech"
+    },
+    {
+      "category": "Desarrollo Web y Frontend"
+    },
+    {
+      "category": "Marketing y Crecimiento"
+    },
+    {
+      "category": "Oficio Creativo"
+    },
+    {
+      "category": "Idiomas"
+    },
+    {
+      "category": "Otros"
+    },
+    {
+      "category": "Licencia de conducir"
+    }
+  ],
+  "headings": {
+    "experience": "Experiencia",
+    "education": "Formación",
+    "skills": "Habilidades y herramientas",
+    "languages": "Idiomas",
+    "certifications": "Certificaciones y formación continua"
+  }
 }

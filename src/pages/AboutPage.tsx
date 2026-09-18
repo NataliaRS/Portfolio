@@ -35,7 +35,7 @@ export function AboutPage() {
       <LogoStrip title={about.logosTitle} />
 
       <Section id="experience">
-        <h2 className="section-title viu-type-headline-m">Experience</h2>
+        <h2 className="section-title viu-type-headline-m">{about.headings.experience}</h2>
 
         <div className="roles" style={{ marginTop: "var(--space-2xl)" }}>
           {about.roles.map((role) => (
@@ -67,7 +67,7 @@ export function AboutPage() {
         </div>
 
         <div className="subsection">
-          <h3 className="subsection__title viu-type-title-s">Education</h3>
+          <h3 className="subsection__title viu-type-title-s">{about.headings.education}</h3>
           <div className="lines">
             {about.education.map((line) => (
               <p key={line}>{line}</p>
@@ -76,7 +76,7 @@ export function AboutPage() {
         </div>
 
         <div className="subsection">
-          <h3 className="subsection__title viu-type-title-s">Skills &amp; Tools</h3>
+          <h3 className="subsection__title viu-type-title-s">{about.headings.skills}</h3>
           <div className="skills-columns">
             {[about.skills.slice(0, 3), about.skills.slice(3)].map((column, i) => (
               <div key={i}>
@@ -96,7 +96,7 @@ export function AboutPage() {
         </div>
 
         <div className="subsection" id="languages">
-          <h3 className="subsection__title viu-type-title-s">Languages</h3>
+          <h3 className="subsection__title viu-type-title-s">{about.headings.languages}</h3>
           <div className="lines">
             {about.languages.map((line) => (
               <p key={line}>{line}</p>
@@ -105,7 +105,7 @@ export function AboutPage() {
         </div>
 
         <div className="subsection">
-          <h3 className="subsection__title viu-type-title-s">Certifications &amp; continuous learning</h3>
+          <h3 className="subsection__title viu-type-title-s">{about.headings.certifications}</h3>
           <div className="lines">
             {about.certifications.map((entry) => (
               <p key={entry.category}>

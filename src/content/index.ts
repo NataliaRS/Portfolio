@@ -52,6 +52,13 @@ export interface CaseSummary {
 
 export interface About {
   hero: { eyebrow: string; title: string; body: string; cta: string };
+  headings: {
+    experience: string;
+    education: string;
+    skills: string;
+    languages: string;
+    certifications: string;
+  };
   stats: Stat[];
   logosTitle: string;
   roles: Role[];

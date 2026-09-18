@@ -569,5 +569,12 @@
       "category": "Driver’s License",
       "body": "B1 (car), A2 (motorcycle) · Costa Rica."
     }
-  ]
+  ],
+  "headings": {
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills & Tools",
+    "languages": "Languages",
+    "certifications": "Certifications & continuous learning"
+  }
 }
