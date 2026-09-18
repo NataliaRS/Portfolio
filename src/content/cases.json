@@ -103,6 +103,8 @@
   ],
   "study": {
     "hero": {
+      "num": "01",
+      "label": "Overview",
       "eyebrow": "Case 01 · 2026 · VIU Design System",
       "title": "An enterprise-grade design system I built alone, with real Figma-to-code parity",
       "tags": [

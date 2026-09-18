@@ -124,6 +124,8 @@ export interface Site {
 
 export interface CaseStudy {
   hero: {
+    num: string;
+    label: string;
     eyebrow: string;
     title: string;
     tags: string[];

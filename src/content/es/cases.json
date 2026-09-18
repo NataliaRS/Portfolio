@@ -98,6 +98,7 @@
   ],
   "study": {
     "hero": {
+      "label": "Resumen",
       "eyebrow": "CASO 01 · 2026 · VIU DESIGN SYSTEM",
       "title": "Un design system de nivel enterprise que construí sola, con paridad real entre Figma y código",
       "tags": [

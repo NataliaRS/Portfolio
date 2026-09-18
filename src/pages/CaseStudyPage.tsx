@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Button, IconButton, Icon, Link, Tag } from "@viu/ui";
+import { IconButton, Icon, Link, Tag } from "@viu/ui";
 
 import type { CaseStudy } from "../content";
 import { useContent } from "../i18n";
@@ -13,6 +13,7 @@ import { CaseRow, GeneralWork } from "../components/sections";
  * had happened when the two lived in separate lists.
  */
 const BLOCKS = [
+  "hero",
   "context",
   "role",
   "frame",
@@ -119,7 +120,7 @@ export function CaseStudyPage() {
           </nav>
 
           <article className="case-article">
-            <header id="block-01">
+            <header id={`block-${study.hero.num}`}>
               <p className="case-study__eyebrow">{study.hero.eyebrow}</p>
               <h1 className="case-study__title viu-type-oversize-l">{study.hero.title}</h1>
               <div className="case-study__tags">
@@ -241,9 +242,15 @@ export function CaseStudyPage() {
       <Section id="cases">
         <div className="section-head">
           <h2 className="section-title viu-type-headline-m">{home.cases.title}</h2>
-          <Button variant="tertiary" size="sm" onClick={() => navigate("/work")}>
+          <Link
+            href="/work"
+            onClick={(event) => {
+              event.preventDefault();
+              navigate("/work");
+            }}
+          >
             {home.cases.link}
-          </Button>
+          </Link>
         </div>
         {others.map((item) => (
           <CaseRow key={item.slug} item={item} />
