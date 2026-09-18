@@ -34,10 +34,11 @@ jobs:
       # a hard refresh or a shared link.
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
+      # Pages must be switched on once by hand:
+      # Settings -> Pages -> Build and deployment -> Source: GitHub Actions.
+      # The workflow token is not allowed to create the Pages site itself.
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
