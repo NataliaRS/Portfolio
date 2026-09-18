@@ -65,7 +65,7 @@ export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
           </nav>
 
           <div className="site-header__actions">
-            <Button variant="primary" size="sm" trailingIcon={<Icon glyph="star" />}>
+            <Button variant="primary" size="sm" trailingIcon={<Icon glyph="download" />}>
               {site.nav.cta}
             </Button>
             {/* Icon-only buttons name themselves on hover/focus, so nobody has
