@@ -389,6 +389,11 @@ ul {
   background: var(--color-bg-brand);
 }
 
+/* The hamburger only exists where the nav and actions are hidden. */
+.site-header__menu {
+  display: none;
+}
+
 .site-header__actions {
   display: flex;
   align-items: center;
@@ -1651,6 +1656,10 @@ ul {
     display: none;
   }
 
+  .site-header__menu {
+    display: inline-flex;
+  }
+
   .site-footer__top,
   .role,
   .role-table__row,
@@ -1846,6 +1855,85 @@ ul {
     width: 100%;
     max-width: none;
   }
+}
+
+
+/* ---------------------------------------------------------- mobile nav -- */
+
+/*
+ * Contents of the mobile drawer. The panel, its focus trap, scroll lock and
+ * scrim all come from the system's `Drawer`; this is only the stack inside.
+ */
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-lg);
+}
+
+.mobile-menu__link {
+  display: block;
+  width: 100%;
+  padding: var(--space-sm) 0;
+  border: 0;
+  background: none;
+  color: var(--color-text-primary);
+  font-family: var(--font-family-display);
+  text-align: left;
+  cursor: pointer;
+}
+
+.mobile-menu__link:hover {
+  color: var(--color-text-link);
+}
+
+/*
+ * The current page is marked by weight and an accent rule as well as colour —
+ * the desktop nav underlines it, and colour alone would fail WCAG 1.4.1.
+ */
+.mobile-menu__link[aria-current="page"] {
+  position: relative;
+  padding-left: var(--space-sm);
+  color: var(--color-text-brand);
+  font-weight: var(--font-weight-medium);
+}
+
+.mobile-menu__link[aria-current="page"]::before {
+  content: "";
+  position: absolute;
+  inset-block: var(--space-2xs);
+  left: 0;
+  width: var(--border-width-strong);
+  background: var(--color-bg-brand);
+}
+
+.mobile-menu__cta {
+  width: 100%;
+}
+
+.mobile-menu__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-top: var(--space-lg);
+}
+
+/* Left-align the contact rows: they are addresses, not centred CTAs. */
+.mobile-menu__contacts button {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.mobile-menu__locale {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: var(--border-width-default) solid var(--color-border-subtle);
+}
+
+.mobile-menu__locale-label {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-text-secondary);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
 }
 
 @media (prefers-reduced-motion: reduce) {

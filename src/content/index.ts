@@ -114,7 +114,15 @@ export interface Site {
     cta: string;
     themeLabels: { light: string; dark: string };
     /** Names for the icon-only buttons — tooltip and accessible name. */
-    iconLabels: { email: string; whatsapp: string; linkedin: string; language: string };
+    iconLabels: {
+      email: string;
+      whatsapp: string;
+      linkedin: string;
+      language: string;
+      /** The hamburger that opens the mobile menu, and its close button. */
+      menu: string;
+      close: string;
+    };
   };
   footer: {
     name: string;

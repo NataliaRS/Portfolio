@@ -5,6 +5,7 @@ import { Avatar, Button, Icon, IconButton, Switch, Tooltip } from "@viu/ui";
 import { useContent } from "../i18n";
 import { applyTheme, readStoredTheme, type Theme } from "../theme";
 import { LanguageMenu } from "./LanguageMenu";
+import { MobileMenu } from "./MobileMenu";
 import { Container } from "./primitives";
 
 /** Figma's nav labels are positional; these are the routes behind them. */
@@ -100,6 +101,10 @@ export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
             </Tooltip>
             <LanguageMenu />
           </div>
+
+          {/* Below 768px the nav and the action row are hidden; this carries
+              all of it. */}
+          <MobileMenu routes={ROUTES} activeIndex={activeIndex} />
         </div>
       </Container>
 

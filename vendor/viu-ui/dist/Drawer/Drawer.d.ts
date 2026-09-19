@@ -11,6 +11,11 @@ export interface DrawerProps extends Omit<HTMLAttributes<HTMLDivElement>, "title
     title: ReactNode;
     /** Show the close (✕) button in the header. */
     showClose?: boolean;
+    /**
+     * Accessible name for the close button. Defaults to Spanish, like the rest
+     * of the system's built-in strings; a bilingual product passes its own.
+     */
+    closeLabel?: string;
     /** Footer slot, typically one or two `<Button>`s. */
     footer?: ReactNode;
     /** Dismiss when the scrim is clicked. */

@@ -15,7 +15,9 @@
       "email": "Correo",
       "whatsapp": "WhatsApp",
       "linkedin": "LinkedIn",
-      "language": "Idioma"
+      "language": "Idioma",
+      "menu": "Menú",
+      "close": "Cerrar"
     }
   },
   "footer": {
