@@ -173,6 +173,8 @@ export interface Fun {
     title: string;
     body: string;
     steps: string[];
+    /** Shown over the goal for a few seconds so the first move is obvious. */
+    intro: { title: string; body: string };
     aimLabel: string;
     /** Nine, in reading order: top-left first, bottom-right last. */
     zones: string[];

@@ -213,6 +213,9 @@ export function PenaltyGame() {
   const [shot, setShot] = useState<Shot | null>(null);
   const [line, setLine] = useState<string>(copy.ready);
   const [reduced, setReduced] = useState(false);
+  /* The opening card over the goal: the first move is "pick a corner", and
+     nothing on the pitch says so until you have already found the zones. */
+  const [intro, setIntro] = useState(true);
 
   const markerRef = useRef<HTMLDivElement | null>(null);
   const shootRef = useRef<HTMLButtonElement | null>(null);
@@ -243,6 +246,12 @@ export function PenaltyGame() {
 
   /* Someone who asked for less motion gets no sweeping bar to chase. */
   useEffect(() => {
+    /* It steps aside on its own; aiming dismisses it sooner (see `aim`). */
+    const id = window.setTimeout(() => setIntro(false), 6000);
+    return () => window.clearTimeout(id);
+  }, []);
+
+  useEffect(() => {
     const query = window.matchMedia("(prefers-reduced-motion: reduce)");
     const sync = () => setReduced(query.matches);
     sync();
@@ -270,6 +279,7 @@ export function PenaltyGame() {
   const aim = useCallback(
     (next: number) => {
       if (phase === "flight") return;
+      setIntro(false);
       /* Aiming again before the last shot has settled cancels the settling,
          not the new aim. */
       clearPending();
@@ -466,6 +476,18 @@ export function PenaltyGame() {
             </button>
           ))}
         </div>
+
+        {intro ? (
+          /* Decorative: the same instruction is already in the steps list and
+             in the zone labels, so announcing it again would only talk over
+             the live status line. */
+          <div className="penalty__intro" aria-hidden="true">
+            <div className="penalty__intro-card">
+              <p className="penalty__intro-title">{game.intro.title}</p>
+              <p className="penalty__intro-body">{game.intro.body}</p>
+            </div>
+          </div>
+        ) : null}
       </div>
 
       <div className="penalty__controls">

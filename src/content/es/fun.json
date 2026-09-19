@@ -78,6 +78,10 @@
       "rate": "Está sacando el {pct} de todo lo que va al arco, en {shots} tiros de esta sesión.",
       "empty": "Todavía no hay nada en el marcador. Tirá.",
       "reset": "Reiniciar el marcador"
+    },
+    "intro": {
+      "title": "EMPEZÁ ACÁ",
+      "body": "Primero elegí a dónde tirar — tocá una zona, o apretá del 1 al 9."
     }
   },
   "note": {

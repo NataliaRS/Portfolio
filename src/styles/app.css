@@ -1281,6 +1281,13 @@ ul {
   --keeper-skin: #d8a984;
   --keeper-hair: #a85a32;
   --ball-body: var(--color-neutral-50);
+  /* The intro panel belongs to the pitch, not to the page: the pitch keeps the
+     same palette in both themes, so a themed surface would have flipped to
+     white in light mode and taken its own bevel with it. Measured on the panel
+     background: edge 18.71:1, accent 7.12:1. */
+  --panel-bg: var(--color-neutral-950);
+  --panel-edge: var(--keeper-trim);
+  --panel-accent: var(--color-red-300);
 
   display: grid;
   gap: var(--space-lg);
@@ -1375,6 +1382,83 @@ ul {
  * "aim here", not so much that the goal turns into a spreadsheet. The number
  * is the keyboard shortcut, and only shows up when the zone is live.
  */
+/*
+ * Opening card over the goal. Pixel idiom rather than a pixel font: hard
+ * edges, no radius, and a stepped bevel drawn with box-shadow in whole
+ * pixels — the same blocky vocabulary as the sprites, which are character
+ * maps rendered as rects. The label font keeps the copy translatable, which
+ * a bitmap alphabet would not.
+ */
+.penalty__intro {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  /* Never eats a click meant for a zone underneath. */
+  pointer-events: none;
+  /* Above the keeper (`z/raised`) and the ball (`z/docked`), or she stands in
+     front of the copy. `z/banner` is the role this is: a page-level notice. */
+  z-index: var(--z-banner);
+  animation: penalty-intro-in var(--motion-duration-micro) var(--motion-ease-standard);
+}
+
+.penalty__intro-card {
+  max-width: 80%;
+  padding: var(--space-md) var(--space-lg);
+  text-align: center;
+  /* Opaque, the way an 8-bit dialogue panel is: the keeper showing through
+     the copy made it hard to read, and a scrim cannot promise a contrast
+     ratio over a sprite that moves. */
+  background: var(--panel-bg);
+  /* 4px steps, no radius: a bevel, the way an 8-bit panel is built. */
+  box-shadow:
+    0 -4px 0 0 var(--panel-edge),
+    0 4px 0 0 var(--panel-edge),
+    -4px 0 0 0 var(--panel-edge),
+    4px 0 0 0 var(--panel-edge),
+    0 0 0 4px var(--panel-bg);
+}
+
+.penalty__intro-title {
+  color: var(--panel-accent);
+  font-family: var(--font-family-label);
+  font-size: var(--font-size-label-s);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.penalty__intro-title::after {
+  /* Arcade cursor. It blinks only where motion is welcome. */
+  content: "\25AE";
+  margin-left: var(--space-2xs);
+  animation: penalty-intro-blink var(--motion-duration-loop) steps(1, end) infinite;
+}
+
+.penalty__intro-body {
+  margin-top: var(--space-xs);
+  color: var(--panel-edge);
+  font-family: var(--font-family-label);
+  font-size: var(--font-size-label-l);
+}
+
+@keyframes penalty-intro-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes penalty-intro-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .penalty__intro-title::after {
+    animation: none;
+  }
+}
+
 .penalty__zone {
   display: grid;
   place-items: center;

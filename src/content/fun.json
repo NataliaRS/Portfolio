@@ -46,6 +46,10 @@
       "Stop the bar — Shoot, Space or Enter inside the green window.",
       "Change sides — she learns the one you favour."
     ],
+    "intro": {
+      "title": "START HERE",
+      "body": "Pick a corner first — click a zone, or press 1 to 9."
+    },
     "aimLabel": "Pick your corner",
     "zones": [
       "Top left",
