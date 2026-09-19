@@ -163,6 +163,9 @@ export interface Leadership {
 
 export interface Fun {
   hero: { eyebrow: string; title: string; body: string };
+  /** Five-piece bento of things that are not work (Figma `Mosaic Section`). */
+  mosaic: { tiles: { key: string; image: string; caption: string }[] };
+  quote: { eyebrow: string; body: string };
   /** Copy for the penalty game. The keeper's lines are keyed by what she did,
    *  not numbered, so a translation can never drift out of context. */
   game: {

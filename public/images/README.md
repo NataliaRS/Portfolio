@@ -16,6 +16,11 @@ takes over — no code change needed.
 | `case-viu-figma.png` | Case study, two-up gallery, left (432 × 243) | `UPLOAD_TARGET_FIGMA` 2089:42 |
 | `case-viu-storybook.png` | Case study, two-up gallery, right | `UPLOAD_TARGET_STORYBOOK` 2089:45 |
 | `case-viu-slide-1.png` … `-4.png` | Case study carousel (884 × 336) | `CAROUSEL_SLIDE_TARGET` 2091:11 |
+| `fun-disney.png` | Fun mosaic, tall left tile (380 × 700) | `image-slot: Disney` 2182:108 |
+| `fun-goalkeeper.png` | Fun mosaic, top middle (380 × 340) | `image-slot: Goalkeeper` 2182:112 |
+| `fun-dribbling.png` | Fun mosaic, bottom middle (380 × 340) | `image-slot: Dribbling` 2182:116 |
+| `fun-dogs.png` | Fun mosaic, top right (380 × 460) | `image-slot: Dogs` 2182:120 |
+| `fun-florist.png` | Fun mosaic, bottom right (380 × 220) | `image-slot: Florist` 2182:124 |
 
 Export at 2× from Figma and keep the aspect ratios above; the layout crops with
 `object-fit: cover`.

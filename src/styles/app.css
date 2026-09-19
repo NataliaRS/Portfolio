@@ -132,6 +132,96 @@ ul {
   background: var(--color-bg-brand);
 }
 
+/* ---------------------------------------------------------------- bento -- */
+
+/*
+ * Fun's mosaic (Figma `Bento Canvas` 2182:106). The five tiles are different
+ * heights, so the grid is laid out in 20px row units: at 1180 wide the canvas
+ * is 700 tall = 35 units, and every tile's height and offset in the design is
+ * a whole number of them. Column 1 spans all 35; column 2 is 17 + 17; column 3
+ * is 23 + 11. The skipped unit between stacked tiles is the row gap.
+ */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(35, 1fr);
+  column-gap: var(--space-20);
+  row-gap: 0;
+  aspect-ratio: 1180 / 700;
+}
+
+.bento__tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-raised);
+  overflow: hidden;
+}
+
+.bento__tile--disney {
+  grid-column: 1;
+  grid-row: 1 / span 35;
+}
+.bento__tile--goalkeeper {
+  grid-column: 2;
+  grid-row: 1 / span 17;
+}
+.bento__tile--dribbling {
+  grid-column: 2;
+  grid-row: 19 / span 17;
+}
+.bento__tile--dogs {
+  grid-column: 3;
+  grid-row: 1 / span 23;
+}
+.bento__tile--florist {
+  grid-column: 3;
+  grid-row: 25 / span 11;
+}
+
+.bento__media {
+  position: absolute;
+  inset: 0;
+}
+
+.bento__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*
+ * The caption sits on the photo, so it carries its own scrim rather than
+ * trusting whatever the image happens to be: without it a light photo drops
+ * the caption below AA exactly where the text is.
+ */
+.bento__caption {
+  position: relative;
+  padding: var(--space-2xl) var(--space-lg) var(--space-lg);
+  color: var(--color-text-primary);
+  background: linear-gradient(to top, var(--color-bg-base), transparent);
+}
+
+@media (max-width: 1023px) {
+  /* One column: the bento's proportions stop meaning anything at this width. */
+  .bento {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    row-gap: var(--space-20);
+    aspect-ratio: auto;
+  }
+
+  .bento__tile {
+    grid-column: 1;
+    grid-row: auto / auto;
+    aspect-ratio: 3 / 2;
+  }
+}
+
 /* ----------------------------------------------------------- leadership -- */
 
 .lead-hero {

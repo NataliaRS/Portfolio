@@ -1,8 +1,31 @@
 {
   "hero": {
     "eyebrow": "FUN",
-    "title": "Fuera de hora",
-    "body": "No todo lo que construyo nace de un brief. Este es el rincón del sitio para lo que no — empezando por una portera que te lee los patrones."
+    "title": "Un poco de mí, fuera del reloj.",
+    "body": "El diseño atraviesa todo lo que hago — y justamente por eso pinto, hago vitrales y trabajo como florista profesional. Crear no es un pasatiempo para mí. Es parte de quién soy."
+  },
+  "mosaic": {
+    "tiles": [
+      {
+        "caption": "Estudio la experiencia, no solo me subo."
+      },
+      {
+        "caption": "Portera primero, diseñadora después."
+      },
+      {
+        "caption": "Todavía meto el pie."
+      },
+      {
+        "caption": "Tres pastores alemanes — dulces y ferozmente protectores."
+      },
+      {
+        "caption": "Florista profesional. Pintora. Vitralista."
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "SOBRE LOS PARQUES",
+    "body": "Soy fan de los parques de Disney y Universal — aunque menos por las atracciones en sí y más por la experiencia completa. Me encanta analizar cada detalle: lo visual, los procesos, la estrategia detrás de mantener contentas a miles de personas a pesar de las filas largas, el marketing evidente y atracciones que duran dos minutos. Y sí, sabiendo todo eso, igual me encanta — porque es una experiencia diseñada profesionalmente, y me gusta vivir dentro de ella. Las montañas rusas sobre todo."
   },
   "game": {
     "eyebrow": "01 — PENALES",

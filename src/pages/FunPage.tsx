@@ -1,6 +1,6 @@
 import { useContent } from "../i18n";
 import { PenaltyGame } from "../components/PenaltyGame";
-import { Container, Section } from "../components/primitives";
+import { Container, Media, Section } from "../components/primitives";
 
 /**
  * Fun — the one page on the site with nothing to prove.
@@ -11,7 +11,7 @@ import { Container, Section } from "../components/primitives";
  */
 export function FunPage() {
   const { fun } = useContent();
-  const { hero, game, note } = fun;
+  const { hero, mosaic, quote, game, note } = fun;
 
   return (
     <>
@@ -24,6 +24,24 @@ export function FunPage() {
           <p className="lead-hero__body viu-type-body-xl">{hero.body}</p>
         </Container>
       </section>
+
+      <Section rule={false}>
+        <div className="bento">
+          {mosaic.tiles.map((tile) => (
+            <figure key={tile.key} className={`bento__tile bento__tile--${tile.key}`}>
+              <Media className="bento__media" src={tile.image} alt={tile.caption} />
+              <figcaption className="bento__caption viu-type-body-m">{tile.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </Section>
+
+      <Section rule={false}>
+        <aside className="proof-box">
+          <p className="proof-box__eyebrow viu-type-label-s">{quote.eyebrow}</p>
+          <p className="proof-box__body viu-type-body-l">{quote.body}</p>
+        </aside>
+      </Section>
 
       <Section>
         <div className="fun-game">

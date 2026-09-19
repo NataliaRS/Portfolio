@@ -1,8 +1,41 @@
 {
   "hero": {
     "eyebrow": "FUN",
-    "title": "Off the clock",
-    "body": "Not every thing I build has a brief behind it. This is the corner of the site for the ones that don't — starting with a keeper who reads your patterns."
+    "title": "A bit of me, off the clock.",
+    "body": "Design runs through everything I do — which is exactly why I paint, make stained glass, and work as a professional florist. Crafting and creating isn't a hobby for me. It's just part of who I am."
+  },
+  "mosaic": {
+    "tiles": [
+      {
+        "key": "disney",
+        "image": "fun-disney.png",
+        "caption": "I study the experience, not just ride it."
+      },
+      {
+        "key": "goalkeeper",
+        "image": "fun-goalkeeper.png",
+        "caption": "Goalkeeper first, designer since."
+      },
+      {
+        "key": "dribbling",
+        "image": "fun-dribbling.png",
+        "caption": "Still get the footwork in."
+      },
+      {
+        "key": "dogs",
+        "image": "fun-dogs.png",
+        "caption": "Three German Shepherds — gentle and fiercely protective."
+      },
+      {
+        "key": "florist",
+        "image": "fun-florist.png",
+        "caption": "Professional florist. Painter. Stained-glass maker."
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "ON THEME PARKS",
+    "body": "I'm a Disney and Universal parks fan — though less for the rides themselves and more for the whole experience. I love analyzing every detail: the visuals, the processes, the strategy behind keeping thousands of people happy despite long lines, obvious marketing, and rides that last two minutes. And yes, knowing all of that, I still love it — because it's a professionally engineered experience, and I love living inside it. Roller coasters especially."
   },
   "game": {
     "eyebrow": "01 — PENALTY SHOOTOUT",
