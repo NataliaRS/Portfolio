@@ -33,7 +33,7 @@
   ],
   "logosTitle": "SaaS & B2C Industry Experience",
   "recommendations": {
-    "title": "Recommedations",
+    "title": "Recommendations",
     "lead": {
       "quote": "I wholeheartedly recommend Natalia as a design lead for any team... Her contributions at Palo Alto Networks were highly valued by management... She earned multiple awards for independently developing both a design system and a color system to enhance accessibility.",
       "name": "Deepthi Katta",
@@ -67,7 +67,7 @@
         "slug": "viu",
         "eyebrow": "Case 01 — VIU",
         "title": "A design system with zero design debt.",
-        "cta": "Ver caso",
+        "cta": "View case",
         "points": [
           {
             "title": "Figma-to-code parity →",
@@ -87,7 +87,7 @@
         "slug": "elastic",
         "eyebrow": "Case 02 — Elastic",
         "title": "Governance that let a web org move without me.",
-        "cta": "Ver caso",
+        "cta": "View case",
         "points": [
           {
             "title": "Governance, not gatekeeping →",

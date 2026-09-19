@@ -49,11 +49,11 @@
         },
         {
           "title": "89% de engagement →",
-          "body": "La ruta Hosted midió el interés real, no el supuesto."
+          "body": "En la ruta Hosted, revelando un interés en Serverless que estaba oculto."
         },
         {
           "title": "La métrica principal de Elastic →",
-          "body": "Los signups de Cloud son la métrica de crecimiento que mira la compañía."
+          "body": "Signups de Cloud — la métrica principal que el rediseño se construyó para mover."
         }
       ]
     },
@@ -68,11 +68,11 @@
         },
         {
           "title": "11 idiomas, una librería →",
-          "body": "Campañas globales localizadas sin rehacer el diseño en cada región."
+          "body": "Sin rehacer por región — los componentes se adaptan a cada idioma."
         },
         {
           "title": "+9% de conversión →",
-          "body": "Un programa de experimentación Test & Learn sobre Adobe Target y Optimizely."
+          "body": "Componentes instrumentados que hicieron barato correr el programa Test & Learn."
         }
       ]
     },
@@ -83,15 +83,15 @@
       "points": [
         {
           "title": "Accesibilidad primero →",
-          "body": "Un sistema de color enfocado en accesibilidad, adoptado en todo paloaltonetworks.com."
+          "body": "Un sistema de color accesible dedicado, no algo agregado al final."
         },
         {
-          "title": "Flujos entre funciones →",
-          "body": "Diseño, desarrollo, analítica, QA y marketing digital trabajando sobre el mismo proceso."
+          "title": "Adopción entre funciones →",
+          "body": "Flujos estandarizados entre diseño, desarrollo, analítica y QA."
         },
         {
           "title": "Reconocimiento interno →",
-          "body": "Múltiples premios internos por entregarlo de forma independiente."
+          "body": "Múltiples premios internos por el sistema y su impacto."
         }
       ]
     }

@@ -29,17 +29,21 @@
   "recommendations": {
     "title": "Recomendaciones",
     "lead": {
-      "role": "Sr. Director, Palo Alto Networks · manager de Natalia"
+      "role": "Sr. Director, Palo Alto Networks · manager de Natalia",
+      "quote": "Recomiendo de todo corazón a Natalia como líder de diseño para cualquier equipo... Sus aportes en Palo Alto Networks fueron muy valorados por la gerencia... Recibió múltiples premios por desarrollar de forma independiente tanto un design system como un sistema de color para mejorar la accesibilidad."
     },
     "cards": [
       {
-        "role": "Director, Palo Alto Networks"
+        "role": "Director, Palo Alto Networks",
+        "quote": "“El compromiso de Natalia con el diseño centrado en el usuario ha sido crucial para nuestro éxito... Entrega los proyectos a tiempo de forma consistente, manteniendo una comunicación clara y abierta sobre su avance... Su dedicación a la mejora continua y a la innovación va más allá de sus responsabilidades principales.”"
       },
       {
-        "role": "Digital Director · reportaba a Natalia, VMware"
+        "role": "Digital Director · reportaba a Natalia, VMware",
+        "quote": "“Natalia fue mi jefa directa en VMware... Creó un sistema de gestión de proyectos que nos permitió tener un mejor control de nuestras tareas diarias... dedicando tiempo semanal uno a uno a conocer qué disfruta más cada persona en el trabajo, sus ambiciones y hacia dónde se ve... logra que cada miembro de su equipo se sienta responsable y valioso, sin microgestionarlo.”"
       },
       {
-        "role": "Principal Solutions Architect · compañero de equipo"
+        "role": "Principal Solutions Architect · compañero de equipo",
+        "quote": "“Natalia fue la Lead UX Designer de nuestro sitio web... Demostró iniciativa liderando el desarrollo de nuestro design system, y sus ideas innovadoras incluso ganaron reconocimiento y patrocinio en Shark Tank... incorporó analítica para asegurar que nuestros esfuerzos de rediseño mejoraran consistentemente la experiencia de usuario.”"
       }
     ],
     "link": "¿Querés ver más recomendaciones? LinkedIn"

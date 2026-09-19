@@ -4,7 +4,7 @@
       "slug": "viu",
       "eyebrow": "Case 01 — VIU",
       "title": "A design system with zero design debt.",
-      "cta": "Ver caso",
+      "cta": "View case",
       "points": [
         {
           "title": "Figma-to-code parity →",
@@ -24,7 +24,7 @@
       "slug": "ai-ops",
       "eyebrow": "Case 02 — AI Ops",
       "title": "AI-native workflows that gave back 2,600–4,500 hours a year.",
-      "cta": "Ver caso",
+      "cta": "View case",
       "points": [
         {
           "title": "Seven initiatives →",
@@ -44,7 +44,7 @@
       "slug": "elastic",
       "eyebrow": "Case 03 — Elastic",
       "title": "+59.5% Cloud signups from a pricing hub redesign.",
-      "cta": "Ver caso",
+      "cta": "View case",
       "points": [
         {
           "title": "Centralized hub →",
@@ -64,11 +64,11 @@
       "slug": "vmware",
       "eyebrow": "Case 04 — VMware",
       "title": "+67% production efficiency across 7 regional stores.",
-      "cta": "Ver caso",
+      "cta": "View case",
       "points": [
         {
           "title": "Inclusive system →",
-          "body": "A component library rebuilt the entire eCommerce store on."
+          "body": "An eCommerce design system and component library, built from scratch."
         },
         {
           "title": "11 languages, one library →",
@@ -84,7 +84,7 @@
       "slug": "palo-alto",
       "eyebrow": "Case 05 — Palo Alto",
       "title": "A design system built independently, adopted as foundational.",
-      "cta": "Ver caso",
+      "cta": "View case",
       "points": [
         {
           "title": "Accessibility-first color →",
