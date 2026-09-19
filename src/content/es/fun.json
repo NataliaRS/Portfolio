@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "eyebrow": "FUN",
+    "title": "Fuera de hora",
+    "body": "No todo lo que construyo nace de un brief. Este es el rincón del sitio para lo que no — empezando por una portera que te lee los patrones."
+  },
+  "game": {
+    "eyebrow": "01 — PENALES",
+    "title": "Metele un gol.",
+    "body": "Elegí un ángulo y detené la barra de tiempo en su punto justo. Entre más cerrado el ángulo, más angosto ese punto — mejor tiene que ser el tiro. Y ella mira dónde tirás: si volvés siempre al mismo lado, ya va a estar ahí.",
+    "steps": [
+      "Elegí un ángulo — clic en una zona, o las teclas 1 a 9.",
+      "Detené la barra — Disparar, Espacio o Enter dentro de la ventana verde.",
+      "Cambiá de lado — ella aprende el que preferís."
+    ],
+    "aimLabel": "Elegí tu ángulo",
+    "zones": [
+      "Arriba izquierda",
+      "Arriba centro",
+      "Arriba derecha",
+      "Media izquierda",
+      "Centro",
+      "Media derecha",
+      "Abajo izquierda",
+      "Abajo centro",
+      "Abajo derecha"
+    ],
+    "timingLabel": "Tiempo",
+    "shoot": "Disparar",
+    "shootHint": "Detené la barra en el verde.",
+    "aimHint": "Nueve zonas. Ella espera la fácil.",
+    "reducedMotion": "Tenés movimiento reducido activado: la barra se queda quieta y el remate se juega solo. La portera es igual de difícil.",
+    "commentary": {
+      "ready": "Tu tiro.",
+      "charging": "Ahora — detené la barra.",
+      "save": {
+        "read": "Te lo leyó. Justo donde apuntaste, y ya estaba ahí.",
+        "reach": "Estirada completa, con la punta de los dedos — y la saca.",
+        "weak": "Le pegaste mal. Directo a ella, y la abraza."
+      },
+      "goal": {
+        "perfect": "Remate perfecto. Esa no la ataja nadie.",
+        "wrongWay": "Se tiró para el otro lado. La clavaste.",
+        "beaten": "Llegó — y aun así entró. Gol."
+      },
+      "wide": {
+        "over": "Por encima del travesaño. Ni se movió.",
+        "post": "Afuera, al lado del poste. Cerca, y no vale nada."
+      }
+    },
+    "score": {
+      "saves": "Sus atajadas",
+      "goals": "Tus goles",
+      "wide": "Afuera",
+      "rate": "Está sacando el {pct} de todo lo que va al arco, en {shots} tiros de esta sesión.",
+      "empty": "Todavía no hay nada en el marcador. Tirá.",
+      "reset": "Reiniciar el marcador"
+    }
+  },
+  "note": {
+    "eyebrow": "POR QUÉ ESTÁ ACÁ",
+    "body": "Porque la portera es un sistema, no una moneda al aire: guarda registro de dónde tirás y lo gasta en su próxima apuesta. Construir algo que se pone más difícil entre más predecible sos resultó mejor tarde que cualquier copy de portafolio que pudiera haber escrito en su lugar."
+  }
+}

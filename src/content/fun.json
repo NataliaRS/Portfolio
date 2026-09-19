@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "eyebrow": "FUN",
+    "title": "Off the clock",
+    "body": "Not every thing I build has a brief behind it. This is the corner of the site for the ones that don't — starting with a keeper who reads your patterns."
+  },
+  "game": {
+    "eyebrow": "01 — PENALTY SHOOTOUT",
+    "title": "Beat the keeper.",
+    "body": "Pick a corner, then stop the timing bar in its sweet spot. The tighter the corner, the narrower that sweet spot — the better the shot has to be. And she watches where you shoot: keep going back to the same side and she will already be there.",
+    "steps": [
+      "Pick a corner — click a zone, or press 1 to 9.",
+      "Stop the bar — Shoot, Space or Enter inside the green window.",
+      "Change sides — she learns the one you favour."
+    ],
+    "aimLabel": "Pick your corner",
+    "zones": [
+      "Top left",
+      "Top centre",
+      "Top right",
+      "Middle left",
+      "Centre",
+      "Middle right",
+      "Bottom left",
+      "Bottom centre",
+      "Bottom right"
+    ],
+    "timingLabel": "Timing",
+    "shoot": "Shoot",
+    "shootHint": "Stop the bar in the green.",
+    "aimHint": "Nine zones. She is expecting the easy one.",
+    "reducedMotion": "Reduced motion is on, so the timing bar stays still and the strike is played for you. The keeper is exactly as hard.",
+    "commentary": {
+      "ready": "Your shot.",
+      "charging": "Now — stop the bar.",
+      "save": {
+        "read": "She read it. Right where you aimed, and she was already there.",
+        "reach": "Full stretch, fingertips — and it stays out.",
+        "weak": "Scuffed it. Straight at her, and she smothers it."
+      },
+      "goal": {
+        "perfect": "Struck perfectly. No keeper alive saves that one.",
+        "wrongWay": "She guessed the other side. You buried it.",
+        "beaten": "She got there — and it still went in. Goal."
+      },
+      "wide": {
+        "over": "Over the bar. She did not have to move.",
+        "post": "Past the post. Close, and worth nothing."
+      }
+    },
+    "score": {
+      "saves": "Her saves",
+      "goals": "Your goals",
+      "wide": "Off target",
+      "rate": "She is keeping out {pct} of everything on target, across {shots} shots this session.",
+      "empty": "Nothing on the board yet. Take a shot.",
+      "reset": "Reset the scoreboard"
+    }
+  },
+  "note": {
+    "eyebrow": "WHY THIS IS HERE",
+    "body": "Because the keeper is a system, not a coin flip: she keeps a record of where you shoot and spends it on her next guess. Building a thing that gets harder the more predictable you are turned out to be a better afternoon than any portfolio copy I could have written instead."
+  }
+}

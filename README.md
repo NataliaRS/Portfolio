@@ -24,6 +24,8 @@ npm run preview
 | `/` | `Home` 76:1610 |
 | `/work` | `Work` 76:2180 |
 | `/about` | `About` 76:1884 |
+| `/leadership` | `Leadership` 2154:206 |
+| `/fun` | — (no Figma frame: built in code, see below) |
 | `/case/:slug` | `Ejemplo Case studie` 76:2540 |
 
 ## How it is put together
@@ -43,6 +45,25 @@ src/
 **Edit the copy in `src/content/*.json`, not in the components.** The JSON was
 generated from the Figma nodes so the two never drift; bold runs inside the
 About bullets are stored as `{ t, b }` text runs, exactly as Figma styles them.
+
+### Fun — the penalty game
+
+`/fun` is the one page with no Figma frame behind it. It holds a penalty
+shootout against a keeper who is meant to be hard to beat:
+
+- **`PenaltySprites.tsx`** draws her and the ball as pixel art — character maps
+  rendered to SVG `<rect>`s, so every colour is a CSS custom property and
+  nothing has to be re-exported to change her kit.
+- **`PenaltyGame.tsx`** holds the model. Everything that decides a shot lives in
+  the `KEEPER` and `STRIKE` constants at the top of the file: how far she
+  reaches, how much a read is worth, how much a perfect strike buys you. She
+  keeps a session-length memory of where you have shot and spends it on her next
+  guess, so a player who favours one corner finds her there. Across a session
+  she keeps out roughly two of every three shots on target.
+- The scoreboard lives in `sessionStorage`, so it survives moving around the
+  site and resets with the tab.
+- With `prefers-reduced-motion`, the timing bar does not sweep and the strike is
+  played out instead. The keeper is exactly as hard either way.
 
 ### Languages
 
