@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
+import { Concierge } from "./components/Concierge";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import { useContent } from "./i18n";
@@ -40,6 +41,7 @@ export function App() {
         </Routes>
       </main>
       <SiteFooter />
+      <Concierge />
     </>
   );
 }

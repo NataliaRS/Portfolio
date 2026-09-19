@@ -1,0 +1,242 @@
+{
+  "launcher": "Preguntá sobre mi trabajo",
+  "title": "Portfolio concierge",
+  "intro": "Respondo preguntas sobre el trabajo de Natalia: resultados, cómo construye sistemas operativos de diseño, herramientas de IA, liderazgo de equipos y disponibilidad. Preguntá lo que quieras, o empezá por una de estas.",
+  "placeholder": "Preguntá sobre resultados, sistemas, disponibilidad…",
+  "footnote": "Las respuestas salen de un archivo de conocimiento que escribe Natalia. Si algo no está ahí, lo digo en vez de inventarlo.",
+  "labels": {
+    "close": "Cerrar el concierge",
+    "send": "Enviar pregunta",
+    "suggestions": "Preguntas sugeridas",
+    "transcript": "Conversación con el portfolio concierge",
+    "you": "Vos",
+    "concierge": "Concierge"
+  },
+  "noMatch": "Eso no está en el archivo de conocimiento de Natalia, así que no lo voy a inventar. Probá con alguna de las preguntas de abajo, o escribile directo a dicrearte@gmail.com.",
+  "entries": [
+    {
+      "question": "¿Qué ha entregado en concreto?",
+      "keywords": [
+        "entregado",
+        "entrego",
+        "construido",
+        "construyo",
+        "hecho",
+        "logros",
+        "casos",
+        "casos de estudio",
+        "su trabajo",
+        "proyectos",
+        "resultados",
+        "shipped",
+        "results"
+      ],
+      "answer": "Cinco casos lo sostienen. VIU — un design system de 73 componentes con paridad Figma-código verificada, construido sola. El rediseño del pricing hub de Elastic — +59.5% de signups de Cloud y 89% de engagement en la ruta Hosted. Un portafolio de UX AI-native de siete iniciativas con 2.600–4.500 horas al año proyectadas de vuelta al equipo. En VMware, +67% de eficiencia de producción en 7 tiendas regionales y +9% de conversión global. En Palo Alto Networks, un design system y un sistema de color con accesibilidad primero, ambos adoptados como fundacionales."
+    },
+    {
+      "question": "¿Cómo usa IA en el día a día?",
+      "keywords": [
+        "ia",
+        "inteligencia artificial",
+        "claude",
+        "chatgpt",
+        "llm",
+        "herramientas de ia",
+        "ai native",
+        "automatizacion",
+        "agentes",
+        "mcp",
+        "prompt",
+        "ai"
+      ],
+      "answer": "Como una ejecutora que ella dirige, no como una generadora autónoma. Construyó VIU delegándole la ejecución a Claude bajo skills que ella misma diseñó y gobierna, con un pre-flight que obliga a verificar el estado real de Figma antes de cada cambio. En Elastic definió y lideró siete iniciativas de UX potenciadas por IA y un gate de Design Ready / UX QA, para que la salida de IA tenga que pasar un estándar senior antes de publicarse."
+    },
+    {
+      "question": "¿Qué está buscando?",
+      "keywords": [
+        "buscando",
+        "busca",
+        "disponible",
+        "disponibilidad",
+        "proximo rol",
+        "contratar",
+        "trabajo",
+        "oportunidad",
+        "puesto",
+        "vacante",
+        "le interesa"
+      ],
+      "answer": "Roles de Manager, Director o Head of UX — la misma línea que corre arriba de todo el sitio. Donde más sirve es donde el diseño tiene que escalar por sistemas y gobernanza y no por headcount: web B2B global, SaaS enterprise, design systems y design ops."
+    },
+    {
+      "question": "¿Cómo la contacto?",
+      "keywords": [
+        "contacto",
+        "contactar",
+        "correo",
+        "email",
+        "escribir",
+        "whatsapp",
+        "telefono",
+        "linkedin",
+        "behance",
+        "hablar con ella",
+        "mensaje"
+      ],
+      "answer": "Correo dicrearte@gmail.com, WhatsApp +506 8719 4296, o LinkedIn en linkedin.com/in/nataliars. Su trabajo también está en Behance, en behance.net/Natalia_R_S. Son los mismos íconos que están en el header de este sitio."
+    },
+    {
+      "question": "¿Cómo construye sistemas operativos de diseño?",
+      "keywords": [
+        "sistema operativo",
+        "sistemas operativos",
+        "design ops",
+        "designops",
+        "gobernanza",
+        "playbook",
+        "proceso",
+        "escalar diseño",
+        "modelo operativo",
+        "como trabaja",
+        "forma de trabajar"
+      ],
+      "answer": "Poniendo el estándar en la infraestructura en vez de en su propia cola de revisión. En Elastic eso fue un Modelo Operativo de Web UX de cinco programas que le dio previsibilidad a unas 140 entregas de página al año, más un Web UX Playbook adoptado por Engineering, PMM, Brand, SEO y Localización. La prueba que le aplica a su propio trabajo: no debería depender de que ella revise cada pieza."
+    },
+    {
+      "question": "¿Cómo lidera un equipo?",
+      "keywords": [
+        "lidera",
+        "liderazgo",
+        "liderar",
+        "gestiona",
+        "gestion",
+        "equipo",
+        "mentoria",
+        "coaching",
+        "reportes directos",
+        "personas",
+        "1:1",
+        "desarrollar personas"
+      ],
+      "answer": "Sistemas antes que centralización, gobernanza antes que arbitraje, player-coach antes que coordinadora. Con cada persona hizo un análisis individual de brechas, coaching semanal 1:1 y sesiones grupales para integrar al equipo como unidad. A lo largo de su gestión el equipo pasó de ser solo diseño a abarcar optimización, UX engineering y la propiedad completa del design system y el Storybook — y cuando la compañía exigió adopción de IA en 2026, UX generó las innovaciones más fuertes de toda la organización."
+    },
+    {
+      "question": "¿Qué es VIU?",
+      "keywords": [
+        "viu",
+        "su design system",
+        "design system propio",
+        "este sitio",
+        "esta pagina",
+        "con que esta hecho",
+        "storybook",
+        "tokens",
+        "paridad"
+      ],
+      "answer": "Su propio design system — y con el que está construido este sitio. 73 componentes en Figma (29 átomos, 35 moléculas, 9 organismos, 4 patrones), la librería @viu/ui en React, un Storybook tematizado como producto con chequeo de accesibilidad por componente, y design tokens cuya paridad con Figma se verifica por scripts. Construido sola, en un mes calendario de trabajo intermitente."
+    },
+    {
+      "question": "¿Qué hizo en Elastic?",
+      "keywords": [
+        "elastic",
+        "pricing hub",
+        "signups",
+        "59.5",
+        "cloud",
+        "serverless",
+        "hosted",
+        "trabajo mas reciente",
+        "rol actual",
+        "ultimo trabajo"
+      ],
+      "answer": "Fue responsable de la estrategia de UX, los design systems, las operaciones de research y los flujos AI-native de elastic.co como Senior Manager, UX & Design. El rediseño del pricing hub reemplazó una landing de producto único por un hub centralizado que cubre Self-managed, Serverless y Hosted, y entregó +59.5% de signups de Cloud — la métrica de crecimiento principal de Elastic — con 89% de engagement en la ruta Hosted."
+    },
+    {
+      "question": "¿Cuánta experiencia tiene?",
+      "keywords": [
+        "experiencia",
+        "años",
+        "cuanto tiempo",
+        "trayectoria",
+        "carrera",
+        "historia",
+        "senior",
+        "seniority",
+        "cv",
+        "recorrido"
+      ],
+      "answer": "18+ años, desde un primer rol de líder creativa en e-commerce regional hasta construir el área de experiencia web en una compañía global de infraestructura. Cuatro plataformas globales lideradas, cuatro design systems construidos, 11 idiomas publicados y 5M+ de alcance mensual en el pico de plataforma. La página Sobre mí tiene cada rol completo."
+    },
+    {
+      "question": "¿Cómo maneja la accesibilidad?",
+      "keywords": [
+        "accesibilidad",
+        "a11y",
+        "wcag",
+        "contraste",
+        "lector de pantalla",
+        "inclusivo",
+        "aa",
+        "sistema de color"
+      ],
+      "answer": "Como un piso, no como una funcionalidad. En VIU cada componente lleva una auditoría de contraste contra WCAG 2.2 AA con números reales — success-solid.light pasó de green.600 a green.700 para llegar a 7,48:1 — y las excepciones de contraste de borde están documentadas bajo WCAG 1.4.11 en vez de ignoradas en silencio. En Palo Alto Networks construyó un sistema de color enfocado en accesibilidad adoptado en todo paloaltonetworks.com."
+    },
+    {
+      "question": "¿Con qué herramientas trabaja?",
+      "keywords": [
+        "herramientas",
+        "stack",
+        "software",
+        "figma",
+        "react",
+        "codigo",
+        "tecnica",
+        "programa",
+        "ingenieria",
+        "maze",
+        "optimizely"
+      ],
+      "answer": "Figma con MCP, Storybook, React, Claude y Claude Code, Maze, Adobe Target, Optimizely, Magento, AEM y Marketo. Sigue construyendo con las manos — HTML, CSS y JavaScript son parte del trabajo, no una vida pasada."
+    },
+    {
+      "question": "¿Dónde está basada?",
+      "keywords": [
+        "basada",
+        "ubicada",
+        "ubicacion",
+        "donde vive",
+        "pais",
+        "costa rica",
+        "remoto",
+        "zona horaria",
+        "huso horario",
+        "mudarse"
+      ],
+      "answer": "Costa Rica. Toda su carrera fue en equipos globales — coordinando líneas de trabajo paralelas entre compañías, regiones y husos horarios en VMware, y trabajando con equipos de Asia, Europa y América."
+    },
+    {
+      "question": "¿Qué idiomas habla?",
+      "keywords": [
+        "idiomas",
+        "idioma",
+        "espanol",
+        "ingles",
+        "bilingue",
+        "habla"
+      ],
+      "answer": "El español es su lengua nativa y trabaja profesionalmente en inglés. Este sitio corre en los dos — el globo del header lo cambia."
+    },
+    {
+      "question": "¿Puedo ver su currículum?",
+      "keywords": [
+        "curriculum",
+        "cv",
+        "resume",
+        "descargar",
+        "pdf",
+        "hoja de vida"
+      ],
+      "answer": "El botón de Currículum del header y del footer lo tiene. La página Sobre mí trae el mismo material completo: cada rol, habilidades, formación y certificaciones."
+    }
+  ]
+}

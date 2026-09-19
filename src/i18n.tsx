@@ -24,11 +24,11 @@ function readStoredLocale(): Locale {
 /**
  * Merge a partial Spanish overlay over the English source.
  *
- * The overlay only carries what actually changes: testimonials stay in the
- * words their authors wrote, and job titles, tool names and course names stay
- * as they are used professionally. Anything the overlay omits — or sets to
- * `null` — falls back to English, so a half-written translation still renders
- * a complete page. Arrays merge element-wise by index.
+ * The overlay only carries what actually changes: company, product and tool
+ * names, certification titles and official job titles stay in their original
+ * form in both languages. Anything the overlay omits — or sets to `null` —
+ * falls back to English, so a half-written translation still renders a
+ * complete page. Arrays merge element-wise by index.
  */
 function merge<T>(base: T, overlay: unknown): T {
   if (overlay == null) return base;

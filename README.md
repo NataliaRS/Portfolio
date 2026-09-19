@@ -122,8 +122,36 @@ npm run build                        # verify
 ### Contact details
 
 Email, WhatsApp and the social links live once in `site.json` under `contact`;
-the header icons and the footer column both read from there. LinkedIn and
-Behance are still placeholder URLs.
+the header icons and the footer column both read from there.
+
+### Portfolio concierge
+
+The docked panel in the bottom-right corner answers questions about Natalia's
+work. It does **not** generate text: `src/concierge/match.ts` scores the
+visitor's phrasing against the entries in
+[`src/content/concierge.json`](src/content/concierge.json) and renders the
+answer written there, or the `noMatch` line when nothing scores high enough.
+No model, no backend, no API key — which is also why it can never invent a
+claim about her work, exactly as the footnote under the input promises.
+
+To teach it something new, add an entry:
+
+```jsonc
+{
+  "id": "unique-id",
+  "question": "The question, as a suggestion button would word it",
+  "keywords": ["phrases", "a visitor might", "actually type"],
+  "answer": "What the concierge says back."
+}
+```
+
+Then add the same entry, in the same position, to
+`src/content/es/concierge.json` (the i18n overlay merges arrays by index), and
+add a phrasing for it to `CASES` in `scripts/check-concierge.mjs`. Longer
+keyword phrases score higher than single words, so prefer `"design system"`
+over `"design"`. `npm run check:concierge` — which `npm run build` also runs —
+fails if the two languages fall out of step, a suggestion points at a missing
+entry, or a question stops routing where it should.
 
 ### Images
 

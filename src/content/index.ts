@@ -1,11 +1,13 @@
 import aboutJson from "./about.json";
 import casesJson from "./cases.json";
+import conciergeJson from "./concierge.json";
 import funJson from "./fun.json";
 import homeJson from "./home.json";
 import leadershipJson from "./leadership.json";
 import siteJson from "./site.json";
 import esAbout from "./es/about.json";
 import esCases from "./es/cases.json";
+import esConcierge from "./es/concierge.json";
 import esFun from "./es/fun.json";
 import esHome from "./es/home.json";
 import esLeadership from "./es/leadership.json";
@@ -203,8 +205,43 @@ export interface Fun {
   note: { eyebrow: string; body: string };
 }
 
+/**
+ * One question the concierge can answer. `keywords` are what the matcher
+ * scores a visitor's phrasing against; `question` is both the label on the
+ * suggestion button and part of the match. Adding an entry here is the only
+ * thing needed to teach the concierge something new.
+ */
+export interface ConciergeEntry {
+  id: string;
+  question: string;
+  keywords: string[];
+  answer: string;
+}
+
+export interface Concierge {
+  launcher: string;
+  title: string;
+  intro: string;
+  placeholder: string;
+  footnote: string;
+  labels: {
+    close: string;
+    send: string;
+    suggestions: string;
+    transcript: string;
+    you: string;
+    concierge: string;
+  };
+  /** Shown verbatim when nothing in `entries` matches — never a guess. */
+  noMatch: string;
+  /** Entry ids, in the order they appear as starter buttons. */
+  suggestions: string[];
+  entries: ConciergeEntry[];
+}
+
 export interface Content {
   about: About;
+  concierge: Concierge;
   leadership: Leadership;
   fun: Fun;
   home: Home;
@@ -215,6 +252,7 @@ export interface Content {
 /** English source of truth — generated from the Figma text nodes. */
 export const EN: Content = {
   about: aboutJson as About,
+  concierge: conciergeJson as Concierge,
   leadership: leadershipJson as Leadership,
   fun: funJson as Fun,
   home: homeJson as Home,
@@ -228,6 +266,7 @@ export const EN: Content = {
  */
 export const ES_OVERLAY = {
   about: esAbout,
+  concierge: esConcierge,
   leadership: esLeadership,
   fun: esFun,
   home: esHome,

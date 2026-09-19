@@ -1,0 +1,257 @@
+{
+  "launcher": "Ask about my work",
+  "title": "Portfolio concierge",
+  "intro": "I answer questions about Natalia's work: outcomes, how she builds design operating systems, AI tooling, team leadership and availability. Ask anything, or start from one of these.",
+  "placeholder": "Ask about outcomes, systems, availability…",
+  "footnote": "Answers come from a knowledge file Natalia writes. If it isn't in there, I say so instead of guessing.",
+  "labels": {
+    "close": "Close the concierge",
+    "send": "Send question",
+    "suggestions": "Suggested questions",
+    "transcript": "Conversation with the portfolio concierge",
+    "you": "You",
+    "concierge": "Concierge"
+  },
+  "noMatch": "That one isn't in Natalia's knowledge file, so I won't guess at it. Try one of the questions below, or write to her directly at dicrearte@gmail.com.",
+  "suggestions": [
+    "shipped",
+    "ai",
+    "looking-for",
+    "contact"
+  ],
+  "entries": [
+    {
+      "id": "shipped",
+      "question": "What has she actually shipped?",
+      "keywords": [
+        "shipped",
+        "ship",
+        "built",
+        "delivered",
+        "actually done",
+        "portfolio",
+        "cases",
+        "case studies",
+        "her work",
+        "projects",
+        "results"
+      ],
+      "answer": "Five cases carry it. VIU — a 73-component design system with verified Figma-to-code parity, built solo. Elastic's pricing hub redesign — +59.5% Cloud signups and 89% engagement on the Hosted path. An AI-native UX portfolio of seven initiatives projected to return 2,600–4,500 hours a year. At VMware, +67% production efficiency across 7 regional stores and +9% global conversion. At Palo Alto Networks, a design system and an accessibility-first color system, both adopted as foundational."
+    },
+    {
+      "id": "ai",
+      "question": "How does she use AI day to day?",
+      "keywords": [
+        "ai",
+        "artificial intelligence",
+        "claude",
+        "chatgpt",
+        "llm",
+        "ai tooling",
+        "ai native",
+        "automation",
+        "agents",
+        "mcp",
+        "prompt"
+      ],
+      "answer": "As an executor she directs, not an autonomous generator. She built VIU by delegating execution to Claude under skills she designed and governs herself, with a pre-flight check that forces verification of Figma's real state before every change. At Elastic she defined and led seven AI-powered UX initiatives and a Design Ready / UX QA gate, so AI output has to clear a senior bar before it ships."
+    },
+    {
+      "id": "looking-for",
+      "question": "What is she looking for?",
+      "keywords": [
+        "looking for",
+        "open to",
+        "next role",
+        "hiring",
+        "available",
+        "availability",
+        "job",
+        "opportunity",
+        "role",
+        "position",
+        "interested in"
+      ],
+      "answer": "Manager, Director or Head of UX roles — the same line runs across the top of this site. She is most useful where design has to scale through systems and governance rather than headcount: global B2B web, enterprise SaaS, design systems and design ops."
+    },
+    {
+      "id": "contact",
+      "question": "How do I contact her?",
+      "keywords": [
+        "contact",
+        "email",
+        "reach",
+        "get in touch",
+        "whatsapp",
+        "phone",
+        "linkedin",
+        "behance",
+        "write to her",
+        "talk to her",
+        "message"
+      ],
+      "answer": "Email dicrearte@gmail.com, WhatsApp +506 8719 4296, or LinkedIn at linkedin.com/in/nataliars. Her work is also on Behance at behance.net/Natalia_R_S. Those are the same icons sitting in this site's header."
+    },
+    {
+      "id": "operating-systems",
+      "question": "How does she build design operating systems?",
+      "keywords": [
+        "operating system",
+        "design ops",
+        "designops",
+        "governance",
+        "playbook",
+        "process",
+        "scale design",
+        "operating model",
+        "how does she work",
+        "way of working"
+      ],
+      "answer": "By putting the standard in infrastructure instead of in her own review queue. At Elastic that meant a Web UX Operating Model of five programs that made roughly 140 page deliveries a year predictable, plus a Web UX Playbook adopted by Engineering, PMM, Brand, SEO and Localization. The test she applies to her own work: it should not depend on her reviewing every piece."
+    },
+    {
+      "id": "leadership",
+      "question": "How does she lead a team?",
+      "keywords": [
+        "lead",
+        "leadership",
+        "leading",
+        "manage",
+        "management",
+        "team",
+        "mentoring",
+        "coaching",
+        "direct reports",
+        "people",
+        "1:1",
+        "grow people"
+      ],
+      "answer": "Systems over centralization, governance over arbitration, player-coach over coordinator. She ran an individual gap analysis with each person, weekly 1:1 coaching and group sessions to integrate the team as a unit. Over her tenure the team grew from design-only into optimization, UX engineering and full ownership of the design system and Storybook — and when the company mandated AI adoption in 2026, UX produced the strongest innovations in the organization."
+    },
+    {
+      "id": "viu",
+      "question": "What is VIU?",
+      "keywords": [
+        "viu",
+        "her design system",
+        "own design system",
+        "this site",
+        "this website",
+        "what is this built with",
+        "storybook",
+        "tokens",
+        "parity"
+      ],
+      "answer": "Her own design system — and the one this site is built with. 73 Figma components (29 atoms, 35 molecules, 9 organisms, 4 patterns), the @viu/ui React library, a Storybook themed as a product with a per-component accessibility check, and design tokens whose parity with Figma is verified by scripts. Built solo, over one calendar month of intermittent work."
+    },
+    {
+      "id": "elastic",
+      "question": "What did she do at Elastic?",
+      "keywords": [
+        "elastic",
+        "pricing hub",
+        "signups",
+        "59.5",
+        "cloud signups",
+        "serverless",
+        "hosted",
+        "most recent",
+        "current role",
+        "last job"
+      ],
+      "answer": "She owned UX strategy, design systems, research operations and AI-native workflows for elastic.co as Senior Manager, UX & Design. The pricing hub redesign replaced a single-product landing page with a centralized hub across Self-managed, Serverless and Hosted, and delivered +59.5% Cloud signups — Elastic's primary growth metric — with 89% engagement on the Hosted path."
+    },
+    {
+      "id": "experience",
+      "question": "How much experience does she have?",
+      "keywords": [
+        "experience",
+        "years",
+        "how long",
+        "background",
+        "career",
+        "history",
+        "senior",
+        "seniority",
+        "cv",
+        "track record"
+      ],
+      "answer": "18+ years, from a first creative lead role in regional e-commerce to building the web experience org at a global infrastructure company. Four global platforms led, four design systems built, 11 languages shipped, and 5M+ monthly reach at her peak platform. The About page carries every role in full."
+    },
+    {
+      "id": "accessibility",
+      "question": "How does she handle accessibility?",
+      "keywords": [
+        "accessibility",
+        "a11y",
+        "wcag",
+        "contrast",
+        "screen reader",
+        "inclusive",
+        "aa",
+        "color system"
+      ],
+      "answer": "As a floor, not a feature. In VIU every component carries a contrast audit against WCAG 2.2 AA with real numbers — success-solid.light moved from green.600 to green.700 to reach 7.48:1 — and border-contrast exceptions are documented under WCAG 1.4.11 instead of quietly ignored. At Palo Alto Networks she built an accessibility-focused color system adopted across paloaltonetworks.com."
+    },
+    {
+      "id": "tools",
+      "question": "What tools does she work in?",
+      "keywords": [
+        "tools",
+        "stack",
+        "software",
+        "figma",
+        "react",
+        "code",
+        "technical",
+        "does she code",
+        "engineering",
+        "maze",
+        "optimizely"
+      ],
+      "answer": "Figma with MCP, Storybook, React, Claude and Claude Code, Maze, Adobe Target, Optimizely, Magento, AEM and Marketo. She still builds hands-on — HTML, CSS and JavaScript are part of the job, not a past life."
+    },
+    {
+      "id": "location",
+      "question": "Where is she based?",
+      "keywords": [
+        "based",
+        "located",
+        "location",
+        "where",
+        "country",
+        "costa rica",
+        "remote",
+        "timezone",
+        "time zone",
+        "relocate"
+      ],
+      "answer": "Costa Rica. Her whole career has been on global teams — coordinating parallel workstreams across companies, regions and time zones at VMware, and working with teams across Asia, Europe and the Americas."
+    },
+    {
+      "id": "languages",
+      "question": "What languages does she speak?",
+      "keywords": [
+        "languages",
+        "language",
+        "spanish",
+        "english",
+        "bilingual",
+        "speak"
+      ],
+      "answer": "Spanish is her native language and she works professionally in English. This site runs in both — the globe in the header switches it."
+    },
+    {
+      "id": "resume",
+      "question": "Can I see her resume?",
+      "keywords": [
+        "resume",
+        "cv",
+        "download",
+        "pdf",
+        "curriculum"
+      ],
+      "answer": "The Resume button in the header and in the footer has it. The About page carries the same material in full: every role, skills, education and certifications."
+    }
+  ]
+}
