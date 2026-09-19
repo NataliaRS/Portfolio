@@ -4,7 +4,8 @@
     "links": [
       "Work",
       "Leadership",
-      "About"
+      "About",
+      "Fun"
     ],
     "cta": "Resume",
     "themeLabels": {
@@ -28,7 +29,8 @@
           "Home",
           "Work",
           "About",
-          "Leadership"
+          "Leadership",
+          "Fun"
         ]
       },
       {

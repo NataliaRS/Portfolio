@@ -1,10 +1,12 @@
 import aboutJson from "./about.json";
 import casesJson from "./cases.json";
+import funJson from "./fun.json";
 import homeJson from "./home.json";
 import leadershipJson from "./leadership.json";
 import siteJson from "./site.json";
 import esAbout from "./es/about.json";
 import esCases from "./es/cases.json";
+import esFun from "./es/fun.json";
 import esHome from "./es/home.json";
 import esLeadership from "./es/leadership.json";
 import esSite from "./es/site.json";
@@ -159,9 +161,47 @@ export interface Leadership {
   };
 }
 
+export interface Fun {
+  hero: { eyebrow: string; title: string; body: string };
+  /** Copy for the penalty game. The keeper's lines are keyed by what she did,
+   *  not numbered, so a translation can never drift out of context. */
+  game: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    steps: string[];
+    aimLabel: string;
+    /** Nine, in reading order: top-left first, bottom-right last. */
+    zones: string[];
+    timingLabel: string;
+    shoot: string;
+    shootHint: string;
+    aimHint: string;
+    reducedMotion: string;
+    commentary: {
+      ready: string;
+      charging: string;
+      save: { read: string; reach: string; weak: string };
+      goal: { perfect: string; wrongWay: string; beaten: string };
+      wide: { over: string; post: string };
+    };
+    /** `rate` takes {pct} and {shots}. */
+    score: {
+      saves: string;
+      goals: string;
+      wide: string;
+      rate: string;
+      empty: string;
+      reset: string;
+    };
+  };
+  note: { eyebrow: string; body: string };
+}
+
 export interface Content {
   about: About;
   leadership: Leadership;
+  fun: Fun;
   home: Home;
   site: Site;
   cases: { list: CaseSummary[]; study: CaseStudy };
@@ -171,6 +211,7 @@ export interface Content {
 export const EN: Content = {
   about: aboutJson as About,
   leadership: leadershipJson as Leadership,
+  fun: funJson as Fun,
   home: homeJson as Home,
   site: siteJson as Site,
   cases: casesJson as { list: CaseSummary[]; study: CaseStudy },
@@ -183,6 +224,7 @@ export const EN: Content = {
 export const ES_OVERLAY = {
   about: esAbout,
   leadership: esLeadership,
+  fun: esFun,
   home: esHome,
   site: esSite,
   cases: esCases,

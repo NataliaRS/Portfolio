@@ -8,10 +8,10 @@ import { LanguageMenu } from "./LanguageMenu";
 import { Container } from "./primitives";
 
 /** Figma's nav labels are positional; these are the routes behind them. */
-const ROUTES = ["/work", "/leadership", "/about"];
+const ROUTES = ["/work", "/leadership", "/about", "/fun"];
 
 /** Only the canonical label of a route gets the underline, not every alias. */
-const ACTIVE_INDEX: Record<string, number> = { "/work": 0, "/leadership": 1, "/about": 2 };
+const ACTIVE_INDEX: Record<string, number> = { "/work": 0, "/leadership": 1, "/about": 2, "/fun": 3 };
 
 export function SiteHeader({ disclaimer }: { disclaimer?: string }) {
   const { site } = useContent();

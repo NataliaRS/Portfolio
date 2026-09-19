@@ -6,6 +6,7 @@ import { SiteHeader } from "./components/SiteHeader";
 import { useContent } from "./i18n";
 import { AboutPage } from "./pages/AboutPage";
 import { CaseStudyPage } from "./pages/CaseStudyPage";
+import { FunPage } from "./pages/FunPage";
 import { HomePage } from "./pages/HomePage";
 import { LeadershipPage } from "./pages/LeadershipPage";
 import { WorkPage } from "./pages/WorkPage";
@@ -33,6 +34,7 @@ export function App() {
           <Route path="/work" element={<WorkPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/leadership" element={<LeadershipPage />} />
+          <Route path="/fun" element={<FunPage />} />
           <Route path="/case/:slug" element={<CaseStudyPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

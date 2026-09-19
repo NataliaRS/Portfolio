@@ -1131,6 +1131,302 @@ ul {
   gap: var(--space-xs);
 }
 
+/* ------------------------------------------------------------------ fun -- */
+
+.fun-game {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+  gap: var(--space-4xl);
+  align-items: start;
+}
+
+.fun-game__title {
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-primary);
+}
+
+.fun-game__body {
+  color: var(--color-text-secondary);
+}
+
+.fun-game__steps {
+  display: grid;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: var(--border-width-default) solid var(--color-border-subtle);
+}
+
+.fun-game__step {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: var(--space-inline-md);
+  color: var(--color-text-secondary);
+}
+
+.fun-game__step-num {
+  color: var(--color-text-brand);
+  font-family: var(--font-family-label);
+  letter-spacing: var(--tracking-wide);
+}
+
+/*
+ * The penalty game.
+ *
+ * Everything outside the pitch is on semantic tokens like the rest of the
+ * site. The pitch itself is an illustration, not a UI surface: it keeps one
+ * fixed set of neutrals across both themes so the keeper reads the same way
+ * under either, the way a photograph would. Only skin and hair are literals —
+ * the system has no ramp for either.
+ */
+.penalty {
+  --pitch-sky: var(--color-neutral-800);
+  --pitch-grass: var(--color-neutral-700);
+  --keeper-kit: var(--color-neutral-950);
+  --keeper-trim: var(--color-neutral-50);
+  --keeper-glove: var(--color-neutral-100);
+  --keeper-boot: var(--color-neutral-700);
+  --keeper-ink: var(--color-neutral-1000);
+  --keeper-badge: var(--color-bg-brand);
+  --keeper-skin: #d8a984;
+  --keeper-hair: #a85a32;
+  --ball-body: var(--color-neutral-50);
+
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.penalty__pitch {
+  position: relative;
+  aspect-ratio: var(--aspect-ratio-16-9);
+  border-radius: var(--radius-lg);
+  background: var(--pitch-sky);
+  overflow: hidden;
+}
+
+.penalty__goal {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.penalty__grass {
+  fill: var(--pitch-grass);
+}
+
+.penalty__net line {
+  stroke: var(--keeper-trim);
+  stroke-width: 0.15;
+  stroke-opacity: var(--opacity-12);
+}
+
+.penalty__frame line {
+  stroke: var(--keeper-trim);
+  stroke-width: 0.9;
+  stroke-linecap: square;
+}
+
+.penalty__line {
+  stroke: var(--keeper-trim);
+  stroke-width: 0.25;
+  stroke-opacity: var(--opacity-24);
+}
+
+/* The keeper and the ball are drawn by the game, not operated by the player. */
+.penalty__keeper,
+.penalty__ball {
+  position: absolute;
+  pointer-events: none;
+}
+
+.penalty__keeper svg,
+.penalty__ball svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.penalty__keeper {
+  z-index: var(--z-raised);
+  height: 38%;
+  aspect-ratio: 21 / 22;
+  transform: translate(-50%, -100%);
+  transition-property: left, top, transform;
+  transition-duration: var(--motion-duration-short);
+  transition-timing-function: var(--motion-ease-emphasized);
+}
+
+.penalty__keeper--dive {
+  height: 22%;
+  aspect-ratio: 21 / 11;
+}
+
+.penalty__ball {
+  z-index: var(--z-docked);
+  aspect-ratio: var(--aspect-ratio-square);
+  transform: translate(-50%, -50%);
+  transition-property: left, top, width;
+  transition-duration: var(--motion-duration-long);
+  transition-timing-function: var(--motion-ease-exit);
+}
+
+.penalty__zones {
+  position: absolute;
+  z-index: var(--z-base);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: var(--border-width-default);
+}
+
+/*
+ * Nine targets, drawn at rest as the faintest possible grid — enough to say
+ * "aim here", not so much that the goal turns into a spreadsheet. The number
+ * is the keyboard shortcut, and only shows up when the zone is live.
+ */
+.penalty__zone {
+  display: grid;
+  place-items: center;
+  border: var(--border-width-default) solid var(--alpha-white-16);
+  border-radius: var(--radius-xs);
+  background: transparent;
+  color: var(--keeper-trim);
+  font-family: var(--font-family-label);
+  font-size: var(--font-size-label-s);
+  cursor: pointer;
+  transition-duration: var(--motion-duration-micro);
+  transition-timing-function: var(--motion-ease-standard);
+  transition-property: background-color, border-color;
+}
+
+.penalty__zone > span {
+  opacity: var(--opacity-0);
+  transition: opacity var(--motion-duration-micro) var(--motion-ease-standard);
+}
+
+.penalty__zone:hover:not(:disabled),
+.penalty__zone:focus-visible,
+.penalty__zone[aria-pressed="true"] {
+  border-color: var(--color-bg-brand-hover);
+  background: var(--color-bg-brand-subtle);
+}
+
+.penalty__zone:hover:not(:disabled) > span,
+.penalty__zone:focus-visible > span,
+.penalty__zone[aria-pressed="true"] > span {
+  opacity: var(--opacity-100);
+}
+
+.penalty__zone:focus-visible {
+  outline: var(--border-width-2) solid var(--color-border-focus);
+  outline-offset: calc(var(--border-width-default) * -1);
+}
+
+.penalty__controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: end;
+  gap: var(--space-lg);
+}
+
+.penalty__timing-label {
+  display: block;
+  margin-bottom: var(--space-2xs);
+  color: var(--color-text-tertiary);
+  font-family: var(--font-family-label);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.penalty__track {
+  position: relative;
+  height: var(--space-24);
+  border: var(--border-width-default) solid var(--color-border-subtle);
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-sunken);
+  overflow: hidden;
+}
+
+/* The sweet spot. It narrows as the corner gets tighter — that is the tell. */
+.penalty__window {
+  position: absolute;
+  inset-block: 0;
+  background: var(--color-feedback-success-soft);
+  border-inline: var(--border-width-2) solid var(--color-feedback-success-solid);
+}
+
+.penalty__marker {
+  position: absolute;
+  inset-block: 0;
+  width: var(--border-width-4);
+  margin-left: calc(var(--border-width-4) / -2);
+  background: var(--color-text-primary);
+}
+
+.penalty__shoot[aria-disabled="true"] {
+  opacity: var(--state-disabled);
+  cursor: not-allowed;
+}
+
+.penalty__say {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.penalty__status {
+  min-height: calc(var(--font-size-body-l) * 2);
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.penalty__hint {
+  color: var(--color-text-tertiary);
+}
+
+.penalty__board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.penalty__score {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-raised);
+}
+
+/* Your column carries the accent; hers is the one you are trying to stop. */
+.penalty__score--you {
+  border-left: var(--border-width-4) solid var(--color-bg-brand);
+}
+
+.penalty__score-value {
+  color: var(--color-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.penalty__score-label {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family-label);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.penalty__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.penalty__rate {
+  color: var(--color-text-secondary);
+}
+
 /* ----------------------------------------------------------- responsive -- */
 
 @media (max-width: 1023px) {
@@ -1143,6 +1439,7 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(var(--page-stat-card), 1fr));
   }
 
+  .fun-game,
   .hero,
   .about-hero,
   .case-row,
@@ -1177,8 +1474,14 @@ ul {
 
   .site-footer__top,
   .role,
-  .role-table__row {
+  .role-table__row,
+  .penalty__controls {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Nine tap targets in a 16:9 box get tight on a phone; give it more height. */
+  .penalty__pitch {
+    aspect-ratio: var(--aspect-ratio-4-3);
   }
 
   .role__rail {
